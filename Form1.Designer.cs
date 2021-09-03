@@ -29,176 +29,371 @@ namespace CalculadoraCientifica
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnMrc = new System.Windows.Forms.Button();
+            this.btnM_mais = new System.Windows.Forms.Button();
+            this.btnDividir = new System.Windows.Forms.Button();
+            this.btn7 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.btn9 = new System.Windows.Forms.Button();
+            this.btnMultiplicar = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
+            this.btn6 = new System.Windows.Forms.Button();
+            this.btnM_menos = new System.Windows.Forms.Button();
+            this.btnSubtrair = new System.Windows.Forms.Button();
+            this.btnZero = new System.Windows.Forms.Button();
+            this.btnOnAc = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.btnGT = new System.Windows.Forms.Button();
+            this.btnZeroZero = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btnPonto = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btnResultado = new System.Windows.Forms.Button();
+            this.btnSomar = new System.Windows.Forms.Button();
+            this.rbPainelExibição = new System.Windows.Forms.RichTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTítulo = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // btnMrc
             // 
-            this.textBox1.Location = new System.Drawing.Point(143, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(481, 20);
-            this.textBox1.TabIndex = 0;
+            this.btnMrc.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnMrc.Location = new System.Drawing.Point(129, 123);
+            this.btnMrc.Name = "btnMrc";
+            this.btnMrc.Size = new System.Drawing.Size(90, 48);
+            this.btnMrc.TabIndex = 1;
+            this.btnMrc.Text = "MRC";
+            this.btnMrc.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnM_mais
             // 
-            this.button1.Location = new System.Drawing.Point(306, 89);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnM_mais.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnM_mais.Location = new System.Drawing.Point(321, 123);
+            this.btnM_mais.Name = "btnM_mais";
+            this.btnM_mais.Size = new System.Drawing.Size(90, 48);
+            this.btnM_mais.TabIndex = 2;
+            this.btnM_mais.Text = "M+";
+            this.btnM_mais.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnDividir
             // 
-            this.button2.Location = new System.Drawing.Point(468, 89);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDividir.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnDividir.Location = new System.Drawing.Point(417, 123);
+            this.btnDividir.Name = "btnDividir";
+            this.btnDividir.Size = new System.Drawing.Size(90, 48);
+            this.btnDividir.TabIndex = 3;
+            this.btnDividir.Text = "÷";
+            this.btnDividir.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn7
             // 
-            this.button3.Location = new System.Drawing.Point(549, 89);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn7.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btn7.Location = new System.Drawing.Point(129, 177);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(90, 48);
+            this.btn7.TabIndex = 4;
+            this.btn7.Text = "7";
+            this.btn7.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn8
             // 
-            this.button4.Location = new System.Drawing.Point(306, 118);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn8.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btn8.Location = new System.Drawing.Point(225, 177);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(90, 48);
+            this.btn8.TabIndex = 5;
+            this.btn8.Text = "8";
+            this.btn8.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btn9
             // 
-            this.button5.Location = new System.Drawing.Point(387, 118);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn9.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btn9.Location = new System.Drawing.Point(321, 177);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(90, 48);
+            this.btn9.TabIndex = 6;
+            this.btn9.Text = "9";
+            this.btn9.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnMultiplicar
             // 
-            this.button6.Location = new System.Drawing.Point(468, 118);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnMultiplicar.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnMultiplicar.Location = new System.Drawing.Point(417, 177);
+            this.btnMultiplicar.Name = "btnMultiplicar";
+            this.btnMultiplicar.Size = new System.Drawing.Size(90, 48);
+            this.btnMultiplicar.TabIndex = 7;
+            this.btnMultiplicar.Text = "X";
+            this.btnMultiplicar.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btn4
             // 
-            this.button7.Location = new System.Drawing.Point(549, 118);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn4.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btn4.Location = new System.Drawing.Point(129, 231);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(90, 48);
+            this.btn4.TabIndex = 8;
+            this.btn4.Text = "4";
+            this.btn4.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btn5
             // 
-            this.button8.Location = new System.Drawing.Point(306, 147);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn5.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btn5.Location = new System.Drawing.Point(225, 231);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(90, 48);
+            this.btn5.TabIndex = 9;
+            this.btn5.Text = "5";
+            this.btn5.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btn6
             // 
-            this.button9.Location = new System.Drawing.Point(387, 147);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btn6.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btn6.Location = new System.Drawing.Point(321, 231);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(90, 48);
+            this.btn6.TabIndex = 10;
+            this.btn6.Text = "6";
+            this.btn6.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnM_menos
             // 
-            this.button10.Location = new System.Drawing.Point(468, 147);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnM_menos.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnM_menos.Location = new System.Drawing.Point(225, 123);
+            this.btnM_menos.Name = "btnM_menos";
+            this.btnM_menos.Size = new System.Drawing.Size(90, 48);
+            this.btnM_menos.TabIndex = 11;
+            this.btnM_menos.Text = "M-";
+            this.btnM_menos.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // btnSubtrair
             // 
-            this.button11.Location = new System.Drawing.Point(387, 89);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 11;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnSubtrair.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnSubtrair.Location = new System.Drawing.Point(417, 231);
+            this.btnSubtrair.Name = "btnSubtrair";
+            this.btnSubtrair.Size = new System.Drawing.Size(90, 48);
+            this.btnSubtrair.TabIndex = 12;
+            this.btnSubtrair.Text = "-";
+            this.btnSubtrair.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // btnZero
             // 
-            this.button12.Location = new System.Drawing.Point(549, 147);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnZero.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnZero.Location = new System.Drawing.Point(33, 338);
+            this.btnZero.Name = "btnZero";
+            this.btnZero.Size = new System.Drawing.Size(90, 48);
+            this.btnZero.TabIndex = 13;
+            this.btnZero.Text = "0";
+            this.btnZero.UseVisualStyleBackColor = true;
+            // 
+            // btnOnAc
+            // 
+            this.btnOnAc.Font = new System.Drawing.Font("Gill Sans MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOnAc.Location = new System.Drawing.Point(33, 284);
+            this.btnOnAc.Name = "btnOnAc";
+            this.btnOnAc.Size = new System.Drawing.Size(90, 48);
+            this.btnOnAc.TabIndex = 14;
+            this.btnOnAc.Text = "ON / AC";
+            this.btnOnAc.UseVisualStyleBackColor = true;
+            // 
+            // btnPlay
+            // 
+            this.btnPlay.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnPlay.Location = new System.Drawing.Point(33, 231);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(90, 48);
+            this.btnPlay.TabIndex = 15;
+            this.btnPlay.Text = ">";
+            this.btnPlay.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.button16.Location = new System.Drawing.Point(33, 177);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(90, 48);
+            this.button16.TabIndex = 16;
+            this.button16.Text = "√";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // btnGT
+            // 
+            this.btnGT.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGT.Location = new System.Drawing.Point(33, 123);
+            this.btnGT.Name = "btnGT";
+            this.btnGT.Size = new System.Drawing.Size(90, 48);
+            this.btnGT.TabIndex = 17;
+            this.btnGT.Text = "GT";
+            this.btnGT.UseVisualStyleBackColor = true;
+            // 
+            // btnZeroZero
+            // 
+            this.btnZeroZero.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnZeroZero.Location = new System.Drawing.Point(129, 338);
+            this.btnZeroZero.Name = "btnZeroZero";
+            this.btnZeroZero.Size = new System.Drawing.Size(90, 48);
+            this.btnZeroZero.TabIndex = 18;
+            this.btnZeroZero.Text = "00";
+            this.btnZeroZero.UseVisualStyleBackColor = true;
+            // 
+            // btn1
+            // 
+            this.btn1.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btn1.Location = new System.Drawing.Point(129, 284);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(90, 48);
+            this.btn1.TabIndex = 19;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = true;
+            // 
+            // btn2
+            // 
+            this.btn2.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btn2.Location = new System.Drawing.Point(225, 284);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(90, 48);
+            this.btn2.TabIndex = 20;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = true;
+            // 
+            // btnPonto
+            // 
+            this.btnPonto.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnPonto.Location = new System.Drawing.Point(225, 338);
+            this.btnPonto.Name = "btnPonto";
+            this.btnPonto.Size = new System.Drawing.Size(90, 48);
+            this.btnPonto.TabIndex = 21;
+            this.btnPonto.Text = ".";
+            this.btnPonto.UseVisualStyleBackColor = true;
+            // 
+            // btn3
+            // 
+            this.btn3.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btn3.Location = new System.Drawing.Point(321, 284);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(90, 48);
+            this.btn3.TabIndex = 22;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = true;
+            // 
+            // btnResultado
+            // 
+            this.btnResultado.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnResultado.Location = new System.Drawing.Point(321, 338);
+            this.btnResultado.Name = "btnResultado";
+            this.btnResultado.Size = new System.Drawing.Size(90, 48);
+            this.btnResultado.TabIndex = 23;
+            this.btnResultado.Text = "=";
+            this.btnResultado.UseVisualStyleBackColor = true;
+            // 
+            // btnSomar
+            // 
+            this.btnSomar.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnSomar.Location = new System.Drawing.Point(417, 284);
+            this.btnSomar.Name = "btnSomar";
+            this.btnSomar.Size = new System.Drawing.Size(90, 102);
+            this.btnSomar.TabIndex = 25;
+            this.btnSomar.Text = "+";
+            this.btnSomar.UseVisualStyleBackColor = true;
+            // 
+            // rbPainelExibição
+            // 
+            this.rbPainelExibição.Location = new System.Drawing.Point(33, 75);
+            this.rbPainelExibição.Name = "rbPainelExibição";
+            this.rbPainelExibição.Size = new System.Drawing.Size(474, 42);
+            this.rbPainelExibição.TabIndex = 26;
+            this.rbPainelExibição.Text = "";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblTítulo);
+            this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(542, 69);
+            this.panel1.TabIndex = 27;
+            // 
+            // lblTítulo
+            // 
+            this.lblTítulo.AutoSize = true;
+            this.lblTítulo.Font = new System.Drawing.Font("Gill Sans MT", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTítulo.Location = new System.Drawing.Point(102, 9);
+            this.lblTítulo.Name = "lblTítulo";
+            this.lblTítulo.Size = new System.Drawing.Size(334, 48);
+            this.lblTítulo.TabIndex = 0;
+            this.lblTítulo.Text = "Calculadora Forms";
+            this.lblTítulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(540, 408);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.rbPainelExibição);
+            this.Controls.Add(this.btnSomar);
+            this.Controls.Add(this.btnResultado);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.btnPonto);
+            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.btn1);
+            this.Controls.Add(this.btnZeroZero);
+            this.Controls.Add(this.btnGT);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.btnPlay);
+            this.Controls.Add(this.btnOnAc);
+            this.Controls.Add(this.btnZero);
+            this.Controls.Add(this.btnSubtrair);
+            this.Controls.Add(this.btnM_menos);
+            this.Controls.Add(this.btn6);
+            this.Controls.Add(this.btn5);
+            this.Controls.Add(this.btn4);
+            this.Controls.Add(this.btnMultiplicar);
+            this.Controls.Add(this.btn9);
+            this.Controls.Add(this.btn8);
+            this.Controls.Add(this.btn7);
+            this.Controls.Add(this.btnDividir);
+            this.Controls.Add(this.btnM_mais);
+            this.Controls.Add(this.btnMrc);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "frmCalculadora";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnMrc;
+        private System.Windows.Forms.Button btnM_mais;
+        private System.Windows.Forms.Button btnDividir;
+        private System.Windows.Forms.Button btn7;
+        private System.Windows.Forms.Button btn8;
+        private System.Windows.Forms.Button btn9;
+        private System.Windows.Forms.Button btnMultiplicar;
+        private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btn5;
+        private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.Button btnM_menos;
+        private System.Windows.Forms.Button btnSubtrair;
+        private System.Windows.Forms.Button btnZero;
+        private System.Windows.Forms.Button btnOnAc;
+        private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnGT;
+        private System.Windows.Forms.Button btnZeroZero;
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btnPonto;
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btnResultado;
+        private System.Windows.Forms.Button btnSomar;
+        private System.Windows.Forms.RichTextBox rbPainelExibição;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblTítulo;
     }
 }
 
