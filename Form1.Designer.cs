@@ -29,7 +29,6 @@ namespace CalculadoraCientifica
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnMrc = new System.Windows.Forms.Button();
             this.btnM_mais = new System.Windows.Forms.Button();
             this.btnDividir = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
@@ -42,10 +41,10 @@ namespace CalculadoraCientifica
             this.btnM_menos = new System.Windows.Forms.Button();
             this.btnSubtrair = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
-            this.btnOnAc = new System.Windows.Forms.Button();
+            this.btnCa = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.btnGT = new System.Windows.Forms.Button();
+            this.btnMS = new System.Windows.Forms.Button();
             this.btnZeroZero = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
@@ -56,25 +55,17 @@ namespace CalculadoraCientifica
             this.rbPainelExibição = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTítulo = new System.Windows.Forms.Label();
+            this.ListValues = new System.Windows.Forms.ListBox();
+            this.btnMR = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnMrc
-            // 
-            this.btnMrc.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnMrc.Location = new System.Drawing.Point(129, 123);
-            this.btnMrc.Name = "btnMrc";
-            this.btnMrc.Size = new System.Drawing.Size(90, 48);
-            this.btnMrc.TabIndex = 1;
-            this.btnMrc.Text = "MRC";
-            this.btnMrc.UseVisualStyleBackColor = true;
             // 
             // btnM_mais
             // 
             this.btnM_mais.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnM_mais.Location = new System.Drawing.Point(321, 123);
+            this.btnM_mais.Location = new System.Drawing.Point(256, 123);
             this.btnM_mais.Name = "btnM_mais";
-            this.btnM_mais.Size = new System.Drawing.Size(90, 48);
+            this.btnM_mais.Size = new System.Drawing.Size(67, 48);
             this.btnM_mais.TabIndex = 2;
             this.btnM_mais.Text = "M+";
             this.btnM_mais.UseVisualStyleBackColor = true;
@@ -82,9 +73,9 @@ namespace CalculadoraCientifica
             // btnDividir
             // 
             this.btnDividir.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnDividir.Location = new System.Drawing.Point(417, 123);
+            this.btnDividir.Location = new System.Drawing.Point(329, 123);
             this.btnDividir.Name = "btnDividir";
-            this.btnDividir.Size = new System.Drawing.Size(90, 48);
+            this.btnDividir.Size = new System.Drawing.Size(67, 48);
             this.btnDividir.TabIndex = 3;
             this.btnDividir.Text = "÷";
             this.btnDividir.UseVisualStyleBackColor = true;
@@ -92,9 +83,9 @@ namespace CalculadoraCientifica
             // btn7
             // 
             this.btn7.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btn7.Location = new System.Drawing.Point(129, 177);
+            this.btn7.Location = new System.Drawing.Point(109, 177);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(90, 48);
+            this.btn7.Size = new System.Drawing.Size(67, 48);
             this.btn7.TabIndex = 4;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
@@ -102,9 +93,9 @@ namespace CalculadoraCientifica
             // btn8
             // 
             this.btn8.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btn8.Location = new System.Drawing.Point(225, 177);
+            this.btn8.Location = new System.Drawing.Point(182, 177);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(90, 48);
+            this.btn8.Size = new System.Drawing.Size(67, 48);
             this.btn8.TabIndex = 5;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
@@ -112,9 +103,9 @@ namespace CalculadoraCientifica
             // btn9
             // 
             this.btn9.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btn9.Location = new System.Drawing.Point(321, 177);
+            this.btn9.Location = new System.Drawing.Point(256, 177);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(90, 48);
+            this.btn9.Size = new System.Drawing.Size(67, 48);
             this.btn9.TabIndex = 6;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
@@ -122,9 +113,9 @@ namespace CalculadoraCientifica
             // btnMultiplicar
             // 
             this.btnMultiplicar.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnMultiplicar.Location = new System.Drawing.Point(417, 177);
+            this.btnMultiplicar.Location = new System.Drawing.Point(329, 177);
             this.btnMultiplicar.Name = "btnMultiplicar";
-            this.btnMultiplicar.Size = new System.Drawing.Size(90, 48);
+            this.btnMultiplicar.Size = new System.Drawing.Size(67, 48);
             this.btnMultiplicar.TabIndex = 7;
             this.btnMultiplicar.Text = "X";
             this.btnMultiplicar.UseVisualStyleBackColor = true;
@@ -132,9 +123,9 @@ namespace CalculadoraCientifica
             // btn4
             // 
             this.btn4.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btn4.Location = new System.Drawing.Point(129, 231);
+            this.btn4.Location = new System.Drawing.Point(109, 231);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(90, 48);
+            this.btn4.Size = new System.Drawing.Size(67, 48);
             this.btn4.TabIndex = 8;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
@@ -142,9 +133,9 @@ namespace CalculadoraCientifica
             // btn5
             // 
             this.btn5.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btn5.Location = new System.Drawing.Point(225, 231);
+            this.btn5.Location = new System.Drawing.Point(182, 231);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(90, 48);
+            this.btn5.Size = new System.Drawing.Size(67, 48);
             this.btn5.TabIndex = 9;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
@@ -152,9 +143,9 @@ namespace CalculadoraCientifica
             // btn6
             // 
             this.btn6.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btn6.Location = new System.Drawing.Point(321, 231);
+            this.btn6.Location = new System.Drawing.Point(256, 231);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(90, 48);
+            this.btn6.Size = new System.Drawing.Size(67, 48);
             this.btn6.TabIndex = 10;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
@@ -162,9 +153,9 @@ namespace CalculadoraCientifica
             // btnM_menos
             // 
             this.btnM_menos.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnM_menos.Location = new System.Drawing.Point(225, 123);
+            this.btnM_menos.Location = new System.Drawing.Point(182, 123);
             this.btnM_menos.Name = "btnM_menos";
-            this.btnM_menos.Size = new System.Drawing.Size(90, 48);
+            this.btnM_menos.Size = new System.Drawing.Size(67, 48);
             this.btnM_menos.TabIndex = 11;
             this.btnM_menos.Text = "M-";
             this.btnM_menos.UseVisualStyleBackColor = true;
@@ -172,9 +163,9 @@ namespace CalculadoraCientifica
             // btnSubtrair
             // 
             this.btnSubtrair.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnSubtrair.Location = new System.Drawing.Point(417, 231);
+            this.btnSubtrair.Location = new System.Drawing.Point(329, 231);
             this.btnSubtrair.Name = "btnSubtrair";
-            this.btnSubtrair.Size = new System.Drawing.Size(90, 48);
+            this.btnSubtrair.Size = new System.Drawing.Size(67, 48);
             this.btnSubtrair.TabIndex = 12;
             this.btnSubtrair.Text = "-";
             this.btnSubtrair.UseVisualStyleBackColor = true;
@@ -184,29 +175,29 @@ namespace CalculadoraCientifica
             this.btnZero.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
             this.btnZero.Location = new System.Drawing.Point(33, 338);
             this.btnZero.Name = "btnZero";
-            this.btnZero.Size = new System.Drawing.Size(90, 48);
+            this.btnZero.Size = new System.Drawing.Size(67, 48);
             this.btnZero.TabIndex = 13;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = true;
             // 
-            // btnOnAc
+            // btnCa
             // 
-            this.btnOnAc.Font = new System.Drawing.Font("Gill Sans MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOnAc.Location = new System.Drawing.Point(33, 284);
-            this.btnOnAc.Name = "btnOnAc";
-            this.btnOnAc.Size = new System.Drawing.Size(90, 48);
-            this.btnOnAc.TabIndex = 14;
-            this.btnOnAc.Text = "ON / AC";
-            this.btnOnAc.UseVisualStyleBackColor = true;
+            this.btnCa.Font = new System.Drawing.Font("Gill Sans MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCa.Location = new System.Drawing.Point(33, 284);
+            this.btnCa.Name = "btnCa";
+            this.btnCa.Size = new System.Drawing.Size(67, 48);
+            this.btnCa.TabIndex = 14;
+            this.btnCa.Text = "CA";
+            this.btnCa.UseVisualStyleBackColor = true;
             // 
             // btnPlay
             // 
             this.btnPlay.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
             this.btnPlay.Location = new System.Drawing.Point(33, 231);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(90, 48);
+            this.btnPlay.Size = new System.Drawing.Size(67, 48);
             this.btnPlay.TabIndex = 15;
-            this.btnPlay.Text = ">";
+            this.btnPlay.Text = "N/D";
             this.btnPlay.UseVisualStyleBackColor = true;
             // 
             // button16
@@ -214,27 +205,27 @@ namespace CalculadoraCientifica
             this.button16.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
             this.button16.Location = new System.Drawing.Point(33, 177);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(90, 48);
+            this.button16.Size = new System.Drawing.Size(67, 48);
             this.button16.TabIndex = 16;
             this.button16.Text = "√";
             this.button16.UseVisualStyleBackColor = true;
             // 
-            // btnGT
+            // btnMS
             // 
-            this.btnGT.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGT.Location = new System.Drawing.Point(33, 123);
-            this.btnGT.Name = "btnGT";
-            this.btnGT.Size = new System.Drawing.Size(90, 48);
-            this.btnGT.TabIndex = 17;
-            this.btnGT.Text = "GT";
-            this.btnGT.UseVisualStyleBackColor = true;
+            this.btnMS.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMS.Location = new System.Drawing.Point(33, 123);
+            this.btnMS.Name = "btnMS";
+            this.btnMS.Size = new System.Drawing.Size(67, 48);
+            this.btnMS.TabIndex = 17;
+            this.btnMS.Text = "MS";
+            this.btnMS.UseVisualStyleBackColor = true;
             // 
             // btnZeroZero
             // 
             this.btnZeroZero.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnZeroZero.Location = new System.Drawing.Point(129, 338);
+            this.btnZeroZero.Location = new System.Drawing.Point(109, 338);
             this.btnZeroZero.Name = "btnZeroZero";
-            this.btnZeroZero.Size = new System.Drawing.Size(90, 48);
+            this.btnZeroZero.Size = new System.Drawing.Size(67, 48);
             this.btnZeroZero.TabIndex = 18;
             this.btnZeroZero.Text = "00";
             this.btnZeroZero.UseVisualStyleBackColor = true;
@@ -242,9 +233,9 @@ namespace CalculadoraCientifica
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btn1.Location = new System.Drawing.Point(129, 284);
+            this.btn1.Location = new System.Drawing.Point(109, 284);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(90, 48);
+            this.btn1.Size = new System.Drawing.Size(67, 48);
             this.btn1.TabIndex = 19;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
@@ -252,9 +243,9 @@ namespace CalculadoraCientifica
             // btn2
             // 
             this.btn2.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btn2.Location = new System.Drawing.Point(225, 284);
+            this.btn2.Location = new System.Drawing.Point(182, 284);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(90, 48);
+            this.btn2.Size = new System.Drawing.Size(67, 48);
             this.btn2.TabIndex = 20;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
@@ -262,9 +253,9 @@ namespace CalculadoraCientifica
             // btnPonto
             // 
             this.btnPonto.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnPonto.Location = new System.Drawing.Point(225, 338);
+            this.btnPonto.Location = new System.Drawing.Point(182, 338);
             this.btnPonto.Name = "btnPonto";
-            this.btnPonto.Size = new System.Drawing.Size(90, 48);
+            this.btnPonto.Size = new System.Drawing.Size(67, 48);
             this.btnPonto.TabIndex = 21;
             this.btnPonto.Text = ".";
             this.btnPonto.UseVisualStyleBackColor = true;
@@ -272,9 +263,9 @@ namespace CalculadoraCientifica
             // btn3
             // 
             this.btn3.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btn3.Location = new System.Drawing.Point(321, 284);
+            this.btn3.Location = new System.Drawing.Point(256, 284);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(90, 48);
+            this.btn3.Size = new System.Drawing.Size(67, 48);
             this.btn3.TabIndex = 22;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
@@ -282,9 +273,9 @@ namespace CalculadoraCientifica
             // btnResultado
             // 
             this.btnResultado.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnResultado.Location = new System.Drawing.Point(321, 338);
+            this.btnResultado.Location = new System.Drawing.Point(256, 338);
             this.btnResultado.Name = "btnResultado";
-            this.btnResultado.Size = new System.Drawing.Size(90, 48);
+            this.btnResultado.Size = new System.Drawing.Size(67, 48);
             this.btnResultado.TabIndex = 23;
             this.btnResultado.Text = "=";
             this.btnResultado.UseVisualStyleBackColor = true;
@@ -292,9 +283,9 @@ namespace CalculadoraCientifica
             // btnSomar
             // 
             this.btnSomar.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnSomar.Location = new System.Drawing.Point(417, 284);
+            this.btnSomar.Location = new System.Drawing.Point(329, 284);
             this.btnSomar.Name = "btnSomar";
-            this.btnSomar.Size = new System.Drawing.Size(90, 102);
+            this.btnSomar.Size = new System.Drawing.Size(67, 102);
             this.btnSomar.TabIndex = 25;
             this.btnSomar.Text = "+";
             this.btnSomar.UseVisualStyleBackColor = true;
@@ -306,6 +297,7 @@ namespace CalculadoraCientifica
             this.rbPainelExibição.Size = new System.Drawing.Size(474, 42);
             this.rbPainelExibição.TabIndex = 26;
             this.rbPainelExibição.Text = "";
+            this.rbPainelExibição.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rbPainelExibição_KeyPress);
             // 
             // panel1
             // 
@@ -326,11 +318,31 @@ namespace CalculadoraCientifica
             this.lblTítulo.Text = "Calculadora Forms";
             this.lblTítulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // ListValues
+            // 
+            this.ListValues.FormattingEnabled = true;
+            this.ListValues.Location = new System.Drawing.Point(402, 123);
+            this.ListValues.Name = "ListValues";
+            this.ListValues.Size = new System.Drawing.Size(105, 264);
+            this.ListValues.TabIndex = 28;
+            // 
+            // btnMR
+            // 
+            this.btnMR.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMR.Location = new System.Drawing.Point(109, 123);
+            this.btnMR.Name = "btnMR";
+            this.btnMR.Size = new System.Drawing.Size(67, 48);
+            this.btnMR.TabIndex = 29;
+            this.btnMR.Text = "MR";
+            this.btnMR.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 408);
+            this.Controls.Add(this.btnMR);
+            this.Controls.Add(this.ListValues);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.rbPainelExibição);
             this.Controls.Add(this.btnSomar);
@@ -340,10 +352,10 @@ namespace CalculadoraCientifica
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btnZeroZero);
-            this.Controls.Add(this.btnGT);
+            this.Controls.Add(this.btnMS);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.btnPlay);
-            this.Controls.Add(this.btnOnAc);
+            this.Controls.Add(this.btnCa);
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.btnSubtrair);
             this.Controls.Add(this.btnM_menos);
@@ -356,7 +368,6 @@ namespace CalculadoraCientifica
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btnDividir);
             this.Controls.Add(this.btnM_mais);
-            this.Controls.Add(this.btnMrc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "frmCalculadora";
@@ -367,7 +378,6 @@ namespace CalculadoraCientifica
         }
 
         #endregion
-        private System.Windows.Forms.Button btnMrc;
         private System.Windows.Forms.Button btnM_mais;
         private System.Windows.Forms.Button btnDividir;
         private System.Windows.Forms.Button btn7;
@@ -380,10 +390,10 @@ namespace CalculadoraCientifica
         private System.Windows.Forms.Button btnM_menos;
         private System.Windows.Forms.Button btnSubtrair;
         private System.Windows.Forms.Button btnZero;
-        private System.Windows.Forms.Button btnOnAc;
+        private System.Windows.Forms.Button btnCa;
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button btnGT;
+        private System.Windows.Forms.Button btnMS;
         private System.Windows.Forms.Button btnZeroZero;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
@@ -394,6 +404,8 @@ namespace CalculadoraCientifica
         private System.Windows.Forms.RichTextBox rbPainelExibição;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblTítulo;
+        private System.Windows.Forms.ListBox ListValues;
+        private System.Windows.Forms.Button btnMR;
     }
 }
 

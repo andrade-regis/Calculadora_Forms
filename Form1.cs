@@ -12,9 +12,17 @@ namespace CalculadoraCientifica
 {
     public partial class Form1 : Form
     {
+        private const string alfaNúmerico = "";
+        private const string caracteresEspeciais = "";
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void rbPainelExibição_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }
