@@ -89,6 +89,7 @@ namespace CalculadoraCientifica
             this.btn7.TabIndex = 4;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn8
             // 
@@ -99,6 +100,7 @@ namespace CalculadoraCientifica
             this.btn8.TabIndex = 5;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn9
             // 
@@ -109,6 +111,7 @@ namespace CalculadoraCientifica
             this.btn9.TabIndex = 6;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btnMultiplicar
             // 
@@ -129,6 +132,7 @@ namespace CalculadoraCientifica
             this.btn4.TabIndex = 8;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -139,6 +143,7 @@ namespace CalculadoraCientifica
             this.btn5.TabIndex = 9;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
@@ -149,6 +154,7 @@ namespace CalculadoraCientifica
             this.btn6.TabIndex = 10;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btnM_menos
             // 
@@ -173,17 +179,18 @@ namespace CalculadoraCientifica
             // btnZero
             // 
             this.btnZero.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnZero.Location = new System.Drawing.Point(33, 338);
+            this.btnZero.Location = new System.Drawing.Point(182, 338);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(67, 48);
             this.btnZero.TabIndex = 13;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = true;
+            this.btnZero.Click += new System.EventHandler(this.btnZero_Click);
             // 
             // btnCa
             // 
             this.btnCa.Font = new System.Drawing.Font("Gill Sans MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCa.Location = new System.Drawing.Point(33, 284);
+            this.btnCa.Location = new System.Drawing.Point(33, 177);
             this.btnCa.Name = "btnCa";
             this.btnCa.Size = new System.Drawing.Size(67, 48);
             this.btnCa.TabIndex = 14;
@@ -203,7 +210,7 @@ namespace CalculadoraCientifica
             // button16
             // 
             this.button16.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.button16.Location = new System.Drawing.Point(33, 177);
+            this.button16.Location = new System.Drawing.Point(33, 284);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(67, 48);
             this.button16.TabIndex = 16;
@@ -229,6 +236,7 @@ namespace CalculadoraCientifica
             this.btnZeroZero.TabIndex = 18;
             this.btnZeroZero.Text = "00";
             this.btnZeroZero.UseVisualStyleBackColor = true;
+            this.btnZeroZero.Click += new System.EventHandler(this.btnZeroZero_Click);
             // 
             // btn1
             // 
@@ -239,6 +247,7 @@ namespace CalculadoraCientifica
             this.btn1.TabIndex = 19;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -249,11 +258,12 @@ namespace CalculadoraCientifica
             this.btn2.TabIndex = 20;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btnPonto
             // 
             this.btnPonto.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnPonto.Location = new System.Drawing.Point(182, 338);
+            this.btnPonto.Location = new System.Drawing.Point(33, 338);
             this.btnPonto.Name = "btnPonto";
             this.btnPonto.Size = new System.Drawing.Size(67, 48);
             this.btnPonto.TabIndex = 21;
@@ -269,6 +279,7 @@ namespace CalculadoraCientifica
             this.btn3.TabIndex = 22;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btnResultado
             // 
@@ -292,7 +303,9 @@ namespace CalculadoraCientifica
             // 
             // rbPainelExibição
             // 
+            this.rbPainelExibição.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbPainelExibição.Location = new System.Drawing.Point(33, 75);
+            this.rbPainelExibição.Multiline = false;
             this.rbPainelExibição.Name = "rbPainelExibição";
             this.rbPainelExibição.Size = new System.Drawing.Size(474, 42);
             this.rbPainelExibição.TabIndex = 26;

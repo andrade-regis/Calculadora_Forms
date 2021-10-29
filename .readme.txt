@@ -6,3 +6,4 @@ M- - Subtrai o valor atual pelo armazenado temporáriamente
 M+ - Soma o valor atual pelo armazenado temporáriamente
 
 
+
