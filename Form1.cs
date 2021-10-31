@@ -13,6 +13,9 @@ namespace CalculadoraCientifica
 {
     public partial class Form1 : Form
     {
+        private double valorInicial = 0;
+        private double valorFinal = 0;
+        private double valorMS = 0;
         private const string caracteresNãoPermitidos= "abcdefghijklmnopqrstuvwxyz";
 
         public Form1()
@@ -22,9 +25,16 @@ namespace CalculadoraCientifica
 
         private void rbPainelExibição_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsDigit(e.KeyChar)))
+            try
             {
-                e.Handled = true;
+                if (!(char.IsDigit(e.KeyChar)))
+                {
+                    e.Handled = true;
+                }
+            }   
+            catch(Exception ex)
+            {
+                MessageBox.Show("Calculadora", ex.Message.ToString(), MessageBoxButtons.OK);
             }
         }
 
@@ -86,5 +96,124 @@ namespace CalculadoraCientifica
         }
 
         #endregion BotõesNúmericos
+
+        #region Funções
+        private void btnDividir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
+                {
+                    valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
+                }
+            }
+            catch(Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnMultiplicar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
+                {
+                    valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
+                }
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnSubtrair_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
+                {
+                    valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
+                }
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnSomar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
+                {
+                    valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
+                }
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnResultado_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (rbPainelExibição.Text.Trim() != null)
+                {
+                    
+                }
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
+        #endregion Funções
+
+        private double ExecutarCalculo(string operação, double valorInicial, double valorSecundário)
+        {
+            double valorFinal;
+            try
+            {
+                switch (operação)
+                {
+                    case "somar":
+
+                        valorFinal = valorInicial + valorSecundário;
+
+                        break;
+                    case "subtrair":
+
+                        valorFinal = valorInicial - valorSecundário;
+
+                        break;
+                    case "dividir":
+
+                        valorFinal = valorInicial / valorSecundário;
+
+                        break;
+                    case "multiplicar":
+
+                        valorFinal = valorInicial + valorSecundário;
+
+                        break;
+                    case "somar":
+
+                        valorFinal = valorInicial + valorSecundário;
+
+                        break;
+                }
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
     }
 }

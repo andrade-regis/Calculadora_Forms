@@ -43,7 +43,7 @@ namespace CalculadoraCientifica
             this.btnZero = new System.Windows.Forms.Button();
             this.btnCa = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btnRaiz = new System.Windows.Forms.Button();
             this.btnMS = new System.Windows.Forms.Button();
             this.btnZeroZero = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
@@ -79,6 +79,7 @@ namespace CalculadoraCientifica
             this.btnDividir.TabIndex = 3;
             this.btnDividir.Text = "÷";
             this.btnDividir.UseVisualStyleBackColor = true;
+            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
             // 
             // btn7
             // 
@@ -122,6 +123,7 @@ namespace CalculadoraCientifica
             this.btnMultiplicar.TabIndex = 7;
             this.btnMultiplicar.Text = "X";
             this.btnMultiplicar.UseVisualStyleBackColor = true;
+            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
             // 
             // btn4
             // 
@@ -175,6 +177,7 @@ namespace CalculadoraCientifica
             this.btnSubtrair.TabIndex = 12;
             this.btnSubtrair.Text = "-";
             this.btnSubtrair.UseVisualStyleBackColor = true;
+            this.btnSubtrair.Click += new System.EventHandler(this.btnSubtrair_Click);
             // 
             // btnZero
             // 
@@ -207,15 +210,15 @@ namespace CalculadoraCientifica
             this.btnPlay.Text = "N/D";
             this.btnPlay.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // btnRaiz
             // 
-            this.button16.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
-            this.button16.Location = new System.Drawing.Point(33, 284);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(67, 48);
-            this.button16.TabIndex = 16;
-            this.button16.Text = "√";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btnRaiz.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnRaiz.Location = new System.Drawing.Point(33, 284);
+            this.btnRaiz.Name = "btnRaiz";
+            this.btnRaiz.Size = new System.Drawing.Size(67, 48);
+            this.btnRaiz.TabIndex = 16;
+            this.btnRaiz.Text = "√";
+            this.btnRaiz.UseVisualStyleBackColor = true;
             // 
             // btnMS
             // 
@@ -290,6 +293,7 @@ namespace CalculadoraCientifica
             this.btnResultado.TabIndex = 23;
             this.btnResultado.Text = "=";
             this.btnResultado.UseVisualStyleBackColor = true;
+            this.btnResultado.Click += new System.EventHandler(this.btnResultado_Click);
             // 
             // btnSomar
             // 
@@ -300,6 +304,7 @@ namespace CalculadoraCientifica
             this.btnSomar.TabIndex = 25;
             this.btnSomar.Text = "+";
             this.btnSomar.UseVisualStyleBackColor = true;
+            this.btnSomar.Click += new System.EventHandler(this.btnSomar_Click);
             // 
             // rbPainelExibição
             // 
@@ -366,7 +371,7 @@ namespace CalculadoraCientifica
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btnZeroZero);
             this.Controls.Add(this.btnMS);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.btnRaiz);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.btnCa);
             this.Controls.Add(this.btnZero);
@@ -405,7 +410,7 @@ namespace CalculadoraCientifica
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnCa;
         private System.Windows.Forms.Button btnPlay;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnRaiz;
         private System.Windows.Forms.Button btnMS;
         private System.Windows.Forms.Button btnZeroZero;
         private System.Windows.Forms.Button btn1;
