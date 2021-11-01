@@ -16,10 +16,14 @@ namespace CalculadoraCientifica
         private double valorInicial = 0;
         private double valorFinal = 0;
         private double valorMS = 0;
-        private const string caracteresNãoPermitidos= "abcdefghijklmnopqrstuvwxyz";
+
+        private eOperação Operação;
+        
 
         public Form1()
         {
+            Operação = new eOperação();
+
             InitializeComponent();
         }
 
@@ -105,6 +109,8 @@ namespace CalculadoraCientifica
                 if(rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
                 {
                     valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
+
+                    Operação = eOperação.Dividir;
                 }
             }
             catch(Exception _erro)
@@ -120,6 +126,8 @@ namespace CalculadoraCientifica
                 if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
                 {
                     valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
+
+                    Operação = eOperação.Multiplicar;
                 }
             }
             catch (Exception _erro)
@@ -135,6 +143,8 @@ namespace CalculadoraCientifica
                 if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
                 {
                     valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
+
+                    Operação = eOperação.Subtrair;
                 }
             }
             catch (Exception _erro)
@@ -150,6 +160,8 @@ namespace CalculadoraCientifica
                 if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
                 {
                     valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
+
+                    Operação = eOperação.Somar;
                 }
             }
             catch (Exception _erro)
@@ -175,44 +187,48 @@ namespace CalculadoraCientifica
 
         #endregion Funções
 
-        private double ExecutarCalculo(string operação, double valorInicial, double valorSecundário)
-        {
-            double valorFinal;
+        private double ExecutarCalculo(eOperação Operação, double valorInicial, double valorSecundário)
+        {           
             try
             {
-                switch (operação)
+                double valorFinal;
+
+                switch (Operação)
                 {
-                    case "somar":
+                    case eOperação.Somar:
 
                         valorFinal = valorInicial + valorSecundário;
 
+
                         break;
-                    case "subtrair":
+                    case eOperação.Subtrair:
 
                         valorFinal = valorInicial - valorSecundário;
 
                         break;
-                    case "dividir":
+                    case eOperação.Dividir:
 
                         valorFinal = valorInicial / valorSecundário;
 
                         break;
-                    case "multiplicar":
+                    case eOperação.Multiplicar:
 
-                        valorFinal = valorInicial + valorSecundário;
-
-                        break;
-                    case "somar":
-
-                        valorFinal = valorInicial + valorSecundário;
+                        valorFinal = valorInicial * valorSecundário;
 
                         break;
-                }
+                    case eOperação.RaizQuadrada:
+
+                        valorFinal = Convert.ToInt32(Math.Sqrt(valorSecundário));
+
+                        break;
+                }                
             }
             catch (Exception _erro)
             {
                 MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
             }
+
+            return valorFinal;
         }
 
     }

@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace CalculadoraCientifica
 {
-    internal class eOperação
+    internal enum eOperação : int
     {
+        Somar = 1,
+        Subtrair = 2,
+        Multiplicar = 3,
+        Dividir = 4,
+        RaizQuadrada = 5
     }
 }
