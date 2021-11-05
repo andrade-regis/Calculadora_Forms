@@ -18,7 +18,6 @@ namespace CalculadoraCientifica
         private double valorMS = 0;
 
         private eOperação Operação;
-        
 
         public Form1()
         {
@@ -35,8 +34,8 @@ namespace CalculadoraCientifica
                 {
                     e.Handled = true;
                 }
-            }   
-            catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Calculadora", ex.Message.ToString(), MessageBoxButtons.OK);
             }
@@ -106,14 +105,16 @@ namespace CalculadoraCientifica
         {
             try
             {
-                if(rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
+                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
                 {
                     valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
 
                     Operação = eOperação.Dividir;
+
+                    rbPainelExibição.Text = string.Empty;
                 }
             }
-            catch(Exception _erro)
+            catch (Exception _erro)
             {
                 MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
             }
@@ -128,6 +129,8 @@ namespace CalculadoraCientifica
                     valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
 
                     Operação = eOperação.Multiplicar;
+
+                    rbPainelExibição.Text = string.Empty;
                 }
             }
             catch (Exception _erro)
@@ -146,6 +149,8 @@ namespace CalculadoraCientifica
 
                     Operação = eOperação.Subtrair;
                 }
+
+                rbPainelExibição.Text = string.Empty;
             }
             catch (Exception _erro)
             {
@@ -162,6 +167,8 @@ namespace CalculadoraCientifica
                     valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
 
                     Operação = eOperação.Somar;
+
+                    rbPainelExibição.Text = string.Empty;
                 }
             }
             catch (Exception _erro)
@@ -176,7 +183,7 @@ namespace CalculadoraCientifica
             {
                 if (rbPainelExibição.Text.Trim() != null)
                 {
-                    
+                    rbPainelExibição.Text = (ExecutarCalculo(Operação, valorInicial, double.Parse(rbPainelExibição.Text.Trim()))).ToString();
                 }
             }
             catch (Exception _erro)
@@ -188,48 +195,151 @@ namespace CalculadoraCientifica
         #endregion Funções
 
         private double ExecutarCalculo(eOperação Operação, double valorInicial, double valorSecundário)
-        {           
+        {
+            double Resultado;
+
             try
             {
-                double valorFinal;
-
                 switch (Operação)
                 {
                     case eOperação.Somar:
 
-                        valorFinal = valorInicial + valorSecundário;
-
-
+                        Resultado = valorInicial + valorSecundário;
                         break;
                     case eOperação.Subtrair:
 
-                        valorFinal = valorInicial - valorSecundário;
-
+                        Resultado = valorInicial - valorSecundário;
                         break;
                     case eOperação.Dividir:
 
-                        valorFinal = valorInicial / valorSecundário;
-
+                        Resultado = valorInicial / valorSecundário;
                         break;
                     case eOperação.Multiplicar:
 
-                        valorFinal = valorInicial * valorSecundário;
-
+                        Resultado = valorInicial * valorSecundário;
                         break;
                     case eOperação.RaizQuadrada:
 
-                        valorFinal = Convert.ToInt32(Math.Sqrt(valorSecundário));
-
+                        Resultado = Convert.ToInt32(Math.Sqrt(valorSecundário));
                         break;
-                }                
+                    default:
+                        Resultado = 0;
+                        break;
+                }
+
+                return Resultado;
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+
+                return 0.0;
+            }
+        }
+
+        private void btnCa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                valorInicial = 0.0;
+                valorFinal = 0.0;
+                rbPainelExibição.Text = string.Empty;
             }
             catch (Exception _erro)
             {
                 MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
             }
-
-            return valorFinal;
         }
 
+        private void lblSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnM_mais_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0" && valorMS != 0.0)
+                {
+                    double valor = Convert.ToDouble(rbPainelExibição.Text.Trim());
+
+                    valorMS = valorMS + valor;
+                }
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnM_menos_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0" && valorMS != 0.0)
+                {
+                    double valor = Convert.ToDouble(rbPainelExibição.Text.Trim());
+
+                    valorMS = valorMS - valor;
+                }
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnMR_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (valorMS != 0.0)
+                {
+                    rbPainelExibição.Text = valorMS.ToString();
+                }
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnMS_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
+                {
+                    valorMS = Convert.ToDouble(rbPainelExibição.Text.Trim());
+
+                    MessageBox.Show("Calculadora", "Valor Armazenado em memória", MessageBoxButtons.OK);
+                }
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnMC_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                valorMS = 0.0;
+
+                MessageBox.Show("Calculadora", "Valor Armazenado em memória apagado", MessageBoxButtons.OK);
+            }
+            catch (Exception _erro)
+            {
+                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnPonto_Click(object sender, EventArgs e)
+        {
+            rbPainelExibição.Text += ",";
+        }
     }
 }
