@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace CalculadoraCientifica
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
         private double valorInicial = 0;
         private double valorFinal = 0;
@@ -19,7 +19,7 @@ namespace CalculadoraCientifica
 
         private eOperação Operação;
 
-        public Form1()
+        public frmPrincipal()
         {
             Operação = new eOperação();
 
