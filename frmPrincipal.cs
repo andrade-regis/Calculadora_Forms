@@ -13,27 +13,24 @@ namespace CalculadoraCientifica
 {
     public partial class frmPrincipal : Form
     {
-        private double valorInicial = 0;
-        private double valorFinal = 0;
+        private double primeiraUnidade = 0;
+        private double segundaUnidade = 0;
         private double valorMS = 0;
 
         private eOperação Operação;
 
         public frmPrincipal()
         {
-            Operação = new eOperação();
+            Operação = eOperação.SemOperação;
 
             InitializeComponent();
         }
 
-        private void rbPainelExibição_KeyPress(object sender, KeyPressEventArgs e)
+        private void rb_PainelExibição_KeyPress(object sender, KeyPressEventArgs e)
         {
             try
             {
-                if (!(char.IsDigit(e.KeyChar)))
-                {
-                    e.Handled = true;
-                }
+                Filtrar_TeclaPressionada(ref e);
             }
             catch (Exception ex)
             {
@@ -41,162 +38,117 @@ namespace CalculadoraCientifica
             }
         }
 
-        #region BotõesNúmericos
-
-        private void btn1_Click(object sender, EventArgs e)
+        private void lbl_Sair_Click(object sender, EventArgs e)
         {
-            rbPainelExibição.Text += "1";
+            this.Close();
         }
 
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += "2";
+        #region Eventos Númericos
+
+        private void btn_Númerico_Click(object sender, EventArgs e)
+        {            
+            string valor = ((Button)sender).Text;            
+            rb_PainelExibição.Text += valor;
         }
 
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += "3";
-        }
+        #endregion
 
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += "4";
-        }
+        #region Botões Operações
 
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += "5";
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += "6";
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += "7";
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += "8";
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += "9";
-        }
-
-        private void btnZero_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += "0";
-        }
-
-        private void btnZeroZero_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += "00";
-        }
-
-        #endregion BotõesNúmericos
-
-        #region Funções
-        private void btnDividir_Click(object sender, EventArgs e)
+        private void btn_Operação_Dividir_Click(object sender, EventArgs e)
         {
             try
             {
-                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
-                {
-                    valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
-
-                    Operação = eOperação.Dividir;
-
-                    rbPainelExibição.Text = string.Empty;
-                }
+                primeiraUnidade = Convert.ToDouble(rb_PainelExibição.Text);                
             }
-            catch (Exception _erro)
+            catch(Exception erro)
             {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+                primeiraUnidade = 0;
+            }
+            finally
+            {
+                Operação = eOperação.Dividir;
+                rb_PainelExibição.Text = string.Empty;
             }
         }
 
-        private void btnMultiplicar_Click(object sender, EventArgs e)
+        private void btn_Operação_Multiplicar_Click(object sender, EventArgs e)
         {
             try
             {
-                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
-                {
-                    valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
-
-                    Operação = eOperação.Multiplicar;
-
-                    rbPainelExibição.Text = string.Empty;
-                }
+                primeiraUnidade = Convert.ToDouble(rb_PainelExibição.Text);
             }
-            catch (Exception _erro)
+            catch (Exception erro)
             {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+                primeiraUnidade = 0;
+            }
+            finally
+            {
+                Operação = eOperação.Multiplicar;
+                rb_PainelExibição.Text = string.Empty;
             }
         }
 
-        private void btnSubtrair_Click(object sender, EventArgs e)
+        private void btn_Operação_Subtrair_Click(object sender, EventArgs e)
         {
             try
             {
-                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
-                {
-                    valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
-
-                    Operação = eOperação.Subtrair;
-                }
-
-                rbPainelExibição.Text = string.Empty;
+                primeiraUnidade = Convert.ToDouble(rb_PainelExibição.Text);
             }
-            catch (Exception _erro)
+            catch (Exception erro)
             {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+                primeiraUnidade = 0;
+            }
+            finally
+            {
+                Operação = eOperação.Subtrair;
+                rb_PainelExibição.Text = string.Empty;
             }
         }
 
-        private void btnSomar_Click(object sender, EventArgs e)
+        private void btn_Operação_Adicionar_Click(object sender, EventArgs e)
         {
             try
             {
-                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
-                {
-                    valorInicial = Convert.ToDouble(rbPainelExibição.Text.Trim());
-
-                    Operação = eOperação.Somar;
-
-                    rbPainelExibição.Text = string.Empty;
-                }
+                primeiraUnidade = Convert.ToDouble(rb_PainelExibição.Text);
             }
-            catch (Exception _erro)
+            catch (Exception erro)
             {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+                primeiraUnidade = 0;
+            }
+            finally
+            {
+                Operação = eOperação.Subtrair;
+                rb_PainelExibição.Text = string.Empty;
             }
         }
 
-        private void btnResultado_Click(object sender, EventArgs e)
+        private void btn_Operação_Resultado_Click(object sender, EventArgs e)
         {
             try
             {
-                if (rbPainelExibição.Text.Trim() != null)
-                {
-                    rbPainelExibição.Text = (ExecutarCalculo(Operação, valorInicial, double.Parse(rbPainelExibição.Text.Trim()))).ToString();
-                }
+                segundaUnidade = Convert.ToDouble(rb_PainelExibição.Text);
+
+                Executar_Calculo();
             }
-            catch (Exception _erro)
+            catch (Exception erro)
             {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+                Definir_ValoresPadrões();
+
+                MessageBox.Show("Comportamento inesperado da aplicação.\n" +
+                                "Contate o Administrador", "Calculadora",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);                
             }
         }
 
-        #endregion Funções
+        #endregion
 
-        private double ExecutarCalculo(eOperação Operação, double valorInicial, double valorSecundário)
+
+        #region Funções Privadas
+
+        private void Executar_Calculo()
         {
-            double Resultado;
+            double resultado = 0;
 
             try
             {
@@ -204,142 +156,119 @@ namespace CalculadoraCientifica
                 {
                     case eOperação.Somar:
 
-                        Resultado = valorInicial + valorSecundário;
+                        resultado = primeiraUnidade + segundaUnidade;
+                        Exibir_Resultado(resultado);
+
                         break;
                     case eOperação.Subtrair:
 
-                        Resultado = valorInicial - valorSecundário;
+                        resultado = primeiraUnidade - segundaUnidade;
+                        Exibir_Resultado(resultado);
+
                         break;
                     case eOperação.Dividir:
 
-                        Resultado = valorInicial / valorSecundário;
+                        resultado = primeiraUnidade / segundaUnidade;
+                        Exibir_Resultado(resultado);
+
                         break;
                     case eOperação.Multiplicar:
 
-                        Resultado = valorInicial * valorSecundário;
+                        resultado = primeiraUnidade * segundaUnidade;
+                        Exibir_Resultado(resultado);
+
                         break;
                     case eOperação.RaizQuadrada:
 
-                        Resultado = Convert.ToInt32(Math.Sqrt(valorSecundário));
+                        resultado = Convert.ToInt32(Math.Sqrt(segundaUnidade));
+                        Exibir_Resultado(resultado);
+
                         break;
                     default:
-                        Resultado = 0;
+
+                        if (rb_PainelExibição.Text != string.Empty)
+                            rb_PainelExibição.Text = string.Empty;
+
                         break;
                 }
-
-                return Resultado;
             }
             catch (Exception _erro)
             {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
-
-                return 0.0;
             }
         }
 
-        private void btnCa_Click(object sender, EventArgs e)
+        private void Definir_ValoresPadrões()
         {
-            try
-            {
-                valorInicial = 0.0;
-                valorFinal = 0.0;
-                rbPainelExibição.Text = string.Empty;
-            }
-            catch (Exception _erro)
-            {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
-            }
+            rb_PainelExibição.Text = string.Empty;
+            primeiraUnidade = 0;
+            segundaUnidade = 0;
+            valorMS = 0;
         }
 
-        private void lblSair_Click(object sender, EventArgs e)
+        private void Exibir_Resultado(double Resultado)
         {
-            this.Close();
+            rb_PainelExibição.Text = Resultado.ToString();
         }
 
-        private void btnM_mais_Click(object sender, EventArgs e)
+        private void Filtrar_TeclaPressionada(ref KeyPressEventArgs args)
         {
-            try
-            {
+            #region Númerico
 
-                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0" && valorMS != 0.0)
-                {
-                    double valor = Convert.ToDouble(rbPainelExibição.Text.Trim());
-
-                    valorMS = valorMS + valor;
-                }
-            }
-            catch (Exception _erro)
+            if (char.IsDigit(args.KeyChar))
             {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
+                return;
             }
+
+            #endregion Númerico
+
+            #region Permitido
+
+            switch (args.KeyChar)
+            {
+                case (char)Keys.Add:
+
+                    btn_Operação_Adicionar_Click(null, null);
+                    return;
+                case (char)Keys.Subtract:
+
+                    btn_Operação_Subtrair_Click(null, null);
+                    return;
+                case (char)Keys.Multiply:
+
+                    btn_Operação_Multiplicar_Click(null, null);
+                    return;
+                case (char)Keys.Divide:
+
+                    btn_Operação_Dividir_Click(null, null);
+                    return;
+                case (char)Keys.Oemplus:
+
+                    btn_Operação_Resultado_Click(null, null);
+                    return;
+                case (char)Keys.Oemcomma:
+
+                    if (rb_PainelExibição.Text.Count(c => c == ',') > 0)
+                        args.Handled = true;
+                    return;                
+                case (char)Keys.Escape:
+
+
+                    return;
+                case (char)Keys.Back:
+                    return;
+
+            }
+
+            #endregion Permitido
+
+
         }
 
-        private void btnM_menos_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0" && valorMS != 0.0)
-                {
-                    double valor = Convert.ToDouble(rbPainelExibição.Text.Trim());
 
-                    valorMS = valorMS - valor;
-                }
-            }
-            catch (Exception _erro)
-            {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
-            }
-        }
 
-        private void btnMR_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (valorMS != 0.0)
-                {
-                    rbPainelExibição.Text = valorMS.ToString();
-                }
-            }
-            catch (Exception _erro)
-            {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
-            }
-        }
 
-        private void btnMS_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (rbPainelExibição.Text.Trim() != null || rbPainelExibição.Text.Trim() != "0")
-                {
-                    valorMS = Convert.ToDouble(rbPainelExibição.Text.Trim());
+        #endregion Funções Privadas
 
-                    MessageBox.Show("Calculadora", "Valor Armazenado em memória", MessageBoxButtons.OK);
-                }
-            }
-            catch (Exception _erro)
-            {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
-            }
-        }
-
-        private void btnMC_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                valorMS = 0.0;
-
-                MessageBox.Show("Calculadora", "Valor Armazenado em memória apagado", MessageBoxButtons.OK);
-            }
-            catch (Exception _erro)
-            {
-                MessageBox.Show("Calculadora", _erro.Message.ToString(), MessageBoxButtons.OK);
-            }
-        }
-
-        private void btnPonto_Click(object sender, EventArgs e)
-        {
-            rbPainelExibição.Text += ",";
-        }
+        
     }
 }

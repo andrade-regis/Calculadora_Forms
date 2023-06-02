@@ -8,6 +8,7 @@ namespace CalculadoraCientifica
 {
     internal enum eOperação : int
     {
+        SemOperação = 0,
         Somar = 1,
         Subtrair = 2,
         Multiplicar = 3,

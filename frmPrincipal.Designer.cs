@@ -30,33 +30,33 @@ namespace CalculadoraCientifica
         private void InitializeComponent()
         {
             this.btnM_mais = new System.Windows.Forms.Button();
-            this.btnDividir = new System.Windows.Forms.Button();
-            this.btn7 = new System.Windows.Forms.Button();
-            this.btn8 = new System.Windows.Forms.Button();
-            this.btn9 = new System.Windows.Forms.Button();
-            this.btnMultiplicar = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
+            this.btn_Operação_Dividir = new System.Windows.Forms.Button();
+            this.btn_Númerico_7 = new System.Windows.Forms.Button();
+            this.btn_Númerico_8 = new System.Windows.Forms.Button();
+            this.btn_Númerico_9 = new System.Windows.Forms.Button();
+            this.btn_Operação_Multiplicar = new System.Windows.Forms.Button();
+            this.btn_Númerico_4 = new System.Windows.Forms.Button();
+            this.btn_Númerico_5 = new System.Windows.Forms.Button();
+            this.btn_Númerico_6 = new System.Windows.Forms.Button();
             this.btnM_menos = new System.Windows.Forms.Button();
-            this.btnSubtrair = new System.Windows.Forms.Button();
-            this.btnZero = new System.Windows.Forms.Button();
-            this.btnCa = new System.Windows.Forms.Button();
+            this.btn_Operação_Subtrair = new System.Windows.Forms.Button();
+            this.btn_Númerico_0 = new System.Windows.Forms.Button();
+            this.btn_CE = new System.Windows.Forms.Button();
             this.btnMC = new System.Windows.Forms.Button();
-            this.btnRaiz = new System.Windows.Forms.Button();
+            this.btn_Raiz = new System.Windows.Forms.Button();
             this.btnMS = new System.Windows.Forms.Button();
-            this.btnZeroZero = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btnPonto = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btnResultado = new System.Windows.Forms.Button();
-            this.btnSomar = new System.Windows.Forms.Button();
-            this.rbPainelExibição = new System.Windows.Forms.RichTextBox();
+            this.btn_Númerico_00 = new System.Windows.Forms.Button();
+            this.btn_Númerico_1 = new System.Windows.Forms.Button();
+            this.btn_Númerico_2 = new System.Windows.Forms.Button();
+            this.btn_Virgula = new System.Windows.Forms.Button();
+            this.btn_Númerico_3 = new System.Windows.Forms.Button();
+            this.btn_Operação_Resultado = new System.Windows.Forms.Button();
+            this.btn_Operação_Adicionar = new System.Windows.Forms.Button();
+            this.rb_PainelExibição = new System.Windows.Forms.RichTextBox();
             this.pnlTítulo = new System.Windows.Forms.Panel();
+            this.lbl_Título = new System.Windows.Forms.Label();
             this.btnMR = new System.Windows.Forms.Button();
             this.pnlSair = new System.Windows.Forms.Panel();
-            this.lblTítulo_1 = new System.Windows.Forms.Label();
             this.lbl_Sair = new System.Windows.Forms.Label();
             this.pnlTítulo.SuspendLayout();
             this.pnlSair.SuspendLayout();
@@ -69,133 +69,132 @@ namespace CalculadoraCientifica
             this.btnM_mais.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnM_mais.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnM_mais.ForeColor = System.Drawing.Color.Black;
-            this.btnM_mais.Location = new System.Drawing.Point(220, 125);
+            this.btnM_mais.Location = new System.Drawing.Point(25, 360);
             this.btnM_mais.Name = "btnM_mais";
             this.btnM_mais.Size = new System.Drawing.Size(55, 48);
             this.btnM_mais.TabIndex = 2;
             this.btnM_mais.Text = "M+";
             this.btnM_mais.UseVisualStyleBackColor = false;
-            this.btnM_mais.Click += new System.EventHandler(this.btnM_mais_Click);
             // 
-            // btnDividir
+            // btn_Operação_Dividir
             // 
-            this.btnDividir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnDividir.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnDividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDividir.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDividir.ForeColor = System.Drawing.Color.Black;
-            this.btnDividir.Location = new System.Drawing.Point(285, 125);
-            this.btnDividir.Name = "btnDividir";
-            this.btnDividir.Size = new System.Drawing.Size(55, 48);
-            this.btnDividir.TabIndex = 3;
-            this.btnDividir.Text = "÷";
-            this.btnDividir.UseVisualStyleBackColor = false;
-            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
+            this.btn_Operação_Dividir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_Dividir.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Operação_Dividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_Dividir.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_Dividir.ForeColor = System.Drawing.Color.Black;
+            this.btn_Operação_Dividir.Location = new System.Drawing.Point(285, 145);
+            this.btn_Operação_Dividir.Name = "btn_Operação_Dividir";
+            this.btn_Operação_Dividir.Size = new System.Drawing.Size(55, 48);
+            this.btn_Operação_Dividir.TabIndex = 3;
+            this.btn_Operação_Dividir.Text = "÷";
+            this.btn_Operação_Dividir.UseVisualStyleBackColor = false;
+            this.btn_Operação_Dividir.Click += new System.EventHandler(this.btn_Operação_Dividir_Click);
             // 
-            // btn7
+            // btn_Númerico_7
             // 
-            this.btn7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn7.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.ForeColor = System.Drawing.Color.Black;
-            this.btn7.Location = new System.Drawing.Point(90, 179);
-            this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(55, 48);
-            this.btn7.TabIndex = 4;
-            this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = false;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.btn_Númerico_7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_7.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_7.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_7.Location = new System.Drawing.Point(90, 199);
+            this.btn_Númerico_7.Name = "btn_Númerico_7";
+            this.btn_Númerico_7.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_7.TabIndex = 4;
+            this.btn_Númerico_7.Text = "7";
+            this.btn_Númerico_7.UseVisualStyleBackColor = false;
+            this.btn_Númerico_7.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btn8
+            // btn_Númerico_8
             // 
-            this.btn8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn8.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.ForeColor = System.Drawing.Color.Black;
-            this.btn8.Location = new System.Drawing.Point(155, 179);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(55, 48);
-            this.btn8.TabIndex = 5;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = false;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            this.btn_Númerico_8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_8.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_8.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_8.Location = new System.Drawing.Point(155, 199);
+            this.btn_Númerico_8.Name = "btn_Númerico_8";
+            this.btn_Númerico_8.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_8.TabIndex = 5;
+            this.btn_Númerico_8.Text = "8";
+            this.btn_Númerico_8.UseVisualStyleBackColor = false;
+            this.btn_Númerico_8.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btn9
+            // btn_Númerico_9
             // 
-            this.btn9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn9.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.ForeColor = System.Drawing.Color.Black;
-            this.btn9.Location = new System.Drawing.Point(220, 179);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(55, 48);
-            this.btn9.TabIndex = 6;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = false;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.btn_Númerico_9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_9.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_9.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_9.Location = new System.Drawing.Point(220, 199);
+            this.btn_Númerico_9.Name = "btn_Númerico_9";
+            this.btn_Númerico_9.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_9.TabIndex = 6;
+            this.btn_Númerico_9.Text = "9";
+            this.btn_Númerico_9.UseVisualStyleBackColor = false;
+            this.btn_Númerico_9.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btnMultiplicar
+            // btn_Operação_Multiplicar
             // 
-            this.btnMultiplicar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnMultiplicar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMultiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMultiplicar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicar.ForeColor = System.Drawing.Color.Black;
-            this.btnMultiplicar.Location = new System.Drawing.Point(285, 179);
-            this.btnMultiplicar.Name = "btnMultiplicar";
-            this.btnMultiplicar.Size = new System.Drawing.Size(55, 48);
-            this.btnMultiplicar.TabIndex = 7;
-            this.btnMultiplicar.Text = "X";
-            this.btnMultiplicar.UseVisualStyleBackColor = false;
-            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
+            this.btn_Operação_Multiplicar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_Multiplicar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Operação_Multiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_Multiplicar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_Multiplicar.ForeColor = System.Drawing.Color.Black;
+            this.btn_Operação_Multiplicar.Location = new System.Drawing.Point(285, 199);
+            this.btn_Operação_Multiplicar.Name = "btn_Operação_Multiplicar";
+            this.btn_Operação_Multiplicar.Size = new System.Drawing.Size(55, 48);
+            this.btn_Operação_Multiplicar.TabIndex = 7;
+            this.btn_Operação_Multiplicar.Text = "X";
+            this.btn_Operação_Multiplicar.UseVisualStyleBackColor = false;
+            this.btn_Operação_Multiplicar.Click += new System.EventHandler(this.btn_Operação_Multiplicar_Click);
             // 
-            // btn4
+            // btn_Númerico_4
             // 
-            this.btn4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn4.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.ForeColor = System.Drawing.Color.Black;
-            this.btn4.Location = new System.Drawing.Point(90, 233);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(55, 48);
-            this.btn4.TabIndex = 8;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = false;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            this.btn_Númerico_4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_4.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_4.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_4.Location = new System.Drawing.Point(90, 253);
+            this.btn_Númerico_4.Name = "btn_Númerico_4";
+            this.btn_Númerico_4.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_4.TabIndex = 8;
+            this.btn_Númerico_4.Text = "4";
+            this.btn_Númerico_4.UseVisualStyleBackColor = false;
+            this.btn_Númerico_4.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btn5
+            // btn_Númerico_5
             // 
-            this.btn5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.ForeColor = System.Drawing.Color.Black;
-            this.btn5.Location = new System.Drawing.Point(155, 233);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(55, 48);
-            this.btn5.TabIndex = 9;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = false;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            this.btn_Númerico_5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_5.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_5.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_5.Location = new System.Drawing.Point(155, 253);
+            this.btn_Númerico_5.Name = "btn_Númerico_5";
+            this.btn_Númerico_5.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_5.TabIndex = 9;
+            this.btn_Númerico_5.Text = "5";
+            this.btn_Númerico_5.UseVisualStyleBackColor = false;
+            this.btn_Númerico_5.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btn6
+            // btn_Númerico_6
             // 
-            this.btn6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.ForeColor = System.Drawing.Color.Black;
-            this.btn6.Location = new System.Drawing.Point(220, 233);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(55, 48);
-            this.btn6.TabIndex = 10;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = false;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            this.btn_Númerico_6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_6.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_6.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_6.Location = new System.Drawing.Point(220, 253);
+            this.btn_Númerico_6.Name = "btn_Númerico_6";
+            this.btn_Númerico_6.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_6.TabIndex = 10;
+            this.btn_Númerico_6.Text = "6";
+            this.btn_Númerico_6.UseVisualStyleBackColor = false;
+            this.btn_Númerico_6.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
             // btnM_menos
             // 
@@ -204,58 +203,56 @@ namespace CalculadoraCientifica
             this.btnM_menos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnM_menos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnM_menos.ForeColor = System.Drawing.Color.Black;
-            this.btnM_menos.Location = new System.Drawing.Point(155, 125);
+            this.btnM_menos.Location = new System.Drawing.Point(25, 306);
             this.btnM_menos.Name = "btnM_menos";
             this.btnM_menos.Size = new System.Drawing.Size(55, 48);
             this.btnM_menos.TabIndex = 11;
             this.btnM_menos.Text = "M-";
             this.btnM_menos.UseVisualStyleBackColor = false;
-            this.btnM_menos.Click += new System.EventHandler(this.btnM_menos_Click);
             // 
-            // btnSubtrair
+            // btn_Operação_Subtrair
             // 
-            this.btnSubtrair.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnSubtrair.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnSubtrair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubtrair.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtrair.ForeColor = System.Drawing.Color.Black;
-            this.btnSubtrair.Location = new System.Drawing.Point(285, 233);
-            this.btnSubtrair.Name = "btnSubtrair";
-            this.btnSubtrair.Size = new System.Drawing.Size(55, 48);
-            this.btnSubtrair.TabIndex = 12;
-            this.btnSubtrair.Text = "-";
-            this.btnSubtrair.UseVisualStyleBackColor = false;
-            this.btnSubtrair.Click += new System.EventHandler(this.btnSubtrair_Click);
+            this.btn_Operação_Subtrair.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_Subtrair.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Operação_Subtrair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_Subtrair.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_Subtrair.ForeColor = System.Drawing.Color.Black;
+            this.btn_Operação_Subtrair.Location = new System.Drawing.Point(285, 253);
+            this.btn_Operação_Subtrair.Name = "btn_Operação_Subtrair";
+            this.btn_Operação_Subtrair.Size = new System.Drawing.Size(55, 48);
+            this.btn_Operação_Subtrair.TabIndex = 12;
+            this.btn_Operação_Subtrair.Text = "-";
+            this.btn_Operação_Subtrair.UseVisualStyleBackColor = false;
+            this.btn_Operação_Subtrair.Click += new System.EventHandler(this.btn_Operação_Subtrair_Click);
             // 
-            // btnZero
+            // btn_Númerico_0
             // 
-            this.btnZero.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnZero.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZero.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZero.ForeColor = System.Drawing.Color.Black;
-            this.btnZero.Location = new System.Drawing.Point(155, 340);
-            this.btnZero.Name = "btnZero";
-            this.btnZero.Size = new System.Drawing.Size(55, 48);
-            this.btnZero.TabIndex = 13;
-            this.btnZero.Text = "0";
-            this.btnZero.UseVisualStyleBackColor = false;
-            this.btnZero.Click += new System.EventHandler(this.btnZero_Click);
+            this.btn_Númerico_0.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_0.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_0.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_0.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_0.Location = new System.Drawing.Point(155, 360);
+            this.btn_Númerico_0.Name = "btn_Númerico_0";
+            this.btn_Númerico_0.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_0.TabIndex = 13;
+            this.btn_Númerico_0.Text = "0";
+            this.btn_Númerico_0.UseVisualStyleBackColor = false;
+            this.btn_Númerico_0.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btnCa
+            // btn_CE
             // 
-            this.btnCa.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnCa.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnCa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCa.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCa.ForeColor = System.Drawing.Color.Black;
-            this.btnCa.Location = new System.Drawing.Point(25, 233);
-            this.btnCa.Name = "btnCa";
-            this.btnCa.Size = new System.Drawing.Size(55, 48);
-            this.btnCa.TabIndex = 14;
-            this.btnCa.Text = "CA";
-            this.btnCa.UseVisualStyleBackColor = false;
-            this.btnCa.Click += new System.EventHandler(this.btnCa_Click);
+            this.btn_CE.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_CE.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_CE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CE.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CE.ForeColor = System.Drawing.Color.Black;
+            this.btn_CE.Location = new System.Drawing.Point(90, 145);
+            this.btn_CE.Name = "btn_CE";
+            this.btn_CE.Size = new System.Drawing.Size(55, 48);
+            this.btn_CE.TabIndex = 14;
+            this.btn_CE.Text = "CE";
+            this.btn_CE.UseVisualStyleBackColor = false;
             // 
             // btnMC
             // 
@@ -264,27 +261,26 @@ namespace CalculadoraCientifica
             this.btnMC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMC.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMC.ForeColor = System.Drawing.Color.Black;
-            this.btnMC.Location = new System.Drawing.Point(25, 179);
+            this.btnMC.Location = new System.Drawing.Point(25, 199);
             this.btnMC.Name = "btnMC";
             this.btnMC.Size = new System.Drawing.Size(55, 48);
             this.btnMC.TabIndex = 15;
             this.btnMC.Text = "MC";
             this.btnMC.UseVisualStyleBackColor = false;
-            this.btnMC.Click += new System.EventHandler(this.btnMC_Click);
             // 
-            // btnRaiz
+            // btn_Raiz
             // 
-            this.btnRaiz.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnRaiz.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnRaiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRaiz.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRaiz.ForeColor = System.Drawing.Color.Black;
-            this.btnRaiz.Location = new System.Drawing.Point(25, 286);
-            this.btnRaiz.Name = "btnRaiz";
-            this.btnRaiz.Size = new System.Drawing.Size(55, 48);
-            this.btnRaiz.TabIndex = 16;
-            this.btnRaiz.Text = "√";
-            this.btnRaiz.UseVisualStyleBackColor = false;
+            this.btn_Raiz.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Raiz.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Raiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Raiz.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Raiz.ForeColor = System.Drawing.Color.Black;
+            this.btn_Raiz.Location = new System.Drawing.Point(220, 145);
+            this.btn_Raiz.Name = "btn_Raiz";
+            this.btn_Raiz.Size = new System.Drawing.Size(55, 48);
+            this.btn_Raiz.TabIndex = 16;
+            this.btn_Raiz.Text = "√";
+            this.btn_Raiz.UseVisualStyleBackColor = false;
             // 
             // btnMS
             // 
@@ -293,132 +289,130 @@ namespace CalculadoraCientifica
             this.btnMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMS.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMS.ForeColor = System.Drawing.Color.Black;
-            this.btnMS.Location = new System.Drawing.Point(25, 125);
+            this.btnMS.Location = new System.Drawing.Point(25, 145);
             this.btnMS.Name = "btnMS";
             this.btnMS.Size = new System.Drawing.Size(55, 48);
             this.btnMS.TabIndex = 17;
             this.btnMS.Text = "MS";
             this.btnMS.UseVisualStyleBackColor = false;
-            this.btnMS.Click += new System.EventHandler(this.btnMS_Click);
             // 
-            // btnZeroZero
+            // btn_Númerico_00
             // 
-            this.btnZeroZero.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnZeroZero.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnZeroZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZeroZero.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZeroZero.ForeColor = System.Drawing.Color.Black;
-            this.btnZeroZero.Location = new System.Drawing.Point(90, 340);
-            this.btnZeroZero.Name = "btnZeroZero";
-            this.btnZeroZero.Size = new System.Drawing.Size(55, 48);
-            this.btnZeroZero.TabIndex = 18;
-            this.btnZeroZero.Text = "00";
-            this.btnZeroZero.UseVisualStyleBackColor = false;
-            this.btnZeroZero.Click += new System.EventHandler(this.btnZeroZero_Click);
+            this.btn_Númerico_00.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_00.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_00.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_00.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_00.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_00.Location = new System.Drawing.Point(90, 360);
+            this.btn_Númerico_00.Name = "btn_Númerico_00";
+            this.btn_Númerico_00.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_00.TabIndex = 18;
+            this.btn_Númerico_00.Text = "00";
+            this.btn_Númerico_00.UseVisualStyleBackColor = false;
+            this.btn_Númerico_00.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btn1
+            // btn_Númerico_1
             // 
-            this.btn1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.ForeColor = System.Drawing.Color.Black;
-            this.btn1.Location = new System.Drawing.Point(90, 286);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(55, 48);
-            this.btn1.TabIndex = 19;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn_Númerico_1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_1.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_1.Location = new System.Drawing.Point(90, 306);
+            this.btn_Númerico_1.Name = "btn_Númerico_1";
+            this.btn_Númerico_1.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_1.TabIndex = 19;
+            this.btn_Númerico_1.Text = "1";
+            this.btn_Númerico_1.UseVisualStyleBackColor = false;
+            this.btn_Númerico_1.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btn2
+            // btn_Númerico_2
             // 
-            this.btn2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.ForeColor = System.Drawing.Color.Black;
-            this.btn2.Location = new System.Drawing.Point(155, 286);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(55, 48);
-            this.btn2.TabIndex = 20;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn_Númerico_2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_2.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_2.Location = new System.Drawing.Point(155, 306);
+            this.btn_Númerico_2.Name = "btn_Númerico_2";
+            this.btn_Númerico_2.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_2.TabIndex = 20;
+            this.btn_Númerico_2.Text = "2";
+            this.btn_Númerico_2.UseVisualStyleBackColor = false;
+            this.btn_Númerico_2.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btnPonto
+            // btn_Virgula
             // 
-            this.btnPonto.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPonto.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnPonto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPonto.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPonto.ForeColor = System.Drawing.Color.Black;
-            this.btnPonto.Location = new System.Drawing.Point(25, 340);
-            this.btnPonto.Name = "btnPonto";
-            this.btnPonto.Size = new System.Drawing.Size(55, 48);
-            this.btnPonto.TabIndex = 21;
-            this.btnPonto.Text = ",";
-            this.btnPonto.UseVisualStyleBackColor = false;
-            this.btnPonto.Click += new System.EventHandler(this.btnPonto_Click);
+            this.btn_Virgula.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Virgula.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Virgula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Virgula.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Virgula.ForeColor = System.Drawing.Color.Black;
+            this.btn_Virgula.Location = new System.Drawing.Point(155, 145);
+            this.btn_Virgula.Name = "btn_Virgula";
+            this.btn_Virgula.Size = new System.Drawing.Size(55, 48);
+            this.btn_Virgula.TabIndex = 21;
+            this.btn_Virgula.Text = ",";
+            this.btn_Virgula.UseVisualStyleBackColor = false;
             // 
-            // btn3
+            // btn_Númerico_3
             // 
-            this.btn3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.ForeColor = System.Drawing.Color.Black;
-            this.btn3.Location = new System.Drawing.Point(220, 286);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(55, 48);
-            this.btn3.TabIndex = 22;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = false;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn_Númerico_3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Númerico_3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Númerico_3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Númerico_3.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_3.Location = new System.Drawing.Point(220, 306);
+            this.btn_Númerico_3.Name = "btn_Númerico_3";
+            this.btn_Númerico_3.Size = new System.Drawing.Size(55, 48);
+            this.btn_Númerico_3.TabIndex = 22;
+            this.btn_Númerico_3.Text = "3";
+            this.btn_Númerico_3.UseVisualStyleBackColor = false;
+            this.btn_Númerico_3.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btnResultado
+            // btn_Operação_Resultado
             // 
-            this.btnResultado.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnResultado.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnResultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResultado.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResultado.ForeColor = System.Drawing.Color.Black;
-            this.btnResultado.Location = new System.Drawing.Point(220, 340);
-            this.btnResultado.Name = "btnResultado";
-            this.btnResultado.Size = new System.Drawing.Size(55, 48);
-            this.btnResultado.TabIndex = 23;
-            this.btnResultado.Text = "=";
-            this.btnResultado.UseVisualStyleBackColor = false;
-            this.btnResultado.Click += new System.EventHandler(this.btnResultado_Click);
+            this.btn_Operação_Resultado.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_Resultado.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Operação_Resultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_Resultado.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_Resultado.ForeColor = System.Drawing.Color.Black;
+            this.btn_Operação_Resultado.Location = new System.Drawing.Point(220, 360);
+            this.btn_Operação_Resultado.Name = "btn_Operação_Resultado";
+            this.btn_Operação_Resultado.Size = new System.Drawing.Size(55, 48);
+            this.btn_Operação_Resultado.TabIndex = 23;
+            this.btn_Operação_Resultado.Text = "=";
+            this.btn_Operação_Resultado.UseVisualStyleBackColor = false;
+            this.btn_Operação_Resultado.Click += new System.EventHandler(this.btn_Operação_Resultado_Click);
             // 
-            // btnSomar
+            // btn_Operação_Adicionar
             // 
-            this.btnSomar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnSomar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnSomar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSomar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSomar.ForeColor = System.Drawing.Color.Black;
-            this.btnSomar.Location = new System.Drawing.Point(285, 286);
-            this.btnSomar.Name = "btnSomar";
-            this.btnSomar.Size = new System.Drawing.Size(55, 102);
-            this.btnSomar.TabIndex = 25;
-            this.btnSomar.Text = "+";
-            this.btnSomar.UseVisualStyleBackColor = false;
-            this.btnSomar.Click += new System.EventHandler(this.btnSomar_Click);
+            this.btn_Operação_Adicionar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_Adicionar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Operação_Adicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_Adicionar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_Adicionar.ForeColor = System.Drawing.Color.Black;
+            this.btn_Operação_Adicionar.Location = new System.Drawing.Point(285, 306);
+            this.btn_Operação_Adicionar.Name = "btn_Operação_Adicionar";
+            this.btn_Operação_Adicionar.Size = new System.Drawing.Size(55, 102);
+            this.btn_Operação_Adicionar.TabIndex = 25;
+            this.btn_Operação_Adicionar.Text = "+";
+            this.btn_Operação_Adicionar.UseVisualStyleBackColor = false;
+            this.btn_Operação_Adicionar.Click += new System.EventHandler(this.btn_Operação_Adicionar_Click);
             // 
-            // rbPainelExibição
+            // rb_PainelExibição
             // 
-            this.rbPainelExibição.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.rbPainelExibição.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rbPainelExibição.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbPainelExibição.ForeColor = System.Drawing.Color.Black;
-            this.rbPainelExibição.Location = new System.Drawing.Point(25, 75);
-            this.rbPainelExibição.Multiline = false;
-            this.rbPainelExibição.Name = "rbPainelExibição";
-            this.rbPainelExibição.Size = new System.Drawing.Size(315, 42);
-            this.rbPainelExibição.TabIndex = 26;
-            this.rbPainelExibição.Text = "";
-            this.rbPainelExibição.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rbPainelExibição_KeyPress);
+            this.rb_PainelExibição.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.rb_PainelExibição.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rb_PainelExibição.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_PainelExibição.ForeColor = System.Drawing.Color.Black;
+            this.rb_PainelExibição.Location = new System.Drawing.Point(25, 77);
+            this.rb_PainelExibição.Multiline = false;
+            this.rb_PainelExibição.Name = "rb_PainelExibição";
+            this.rb_PainelExibição.Size = new System.Drawing.Size(315, 42);
+            this.rb_PainelExibição.TabIndex = 26;
+            this.rb_PainelExibição.Text = "";
+            this.rb_PainelExibição.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rb_PainelExibição_KeyPress);
             // 
             // pnlTítulo
             // 
@@ -426,12 +420,28 @@ namespace CalculadoraCientifica
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlTítulo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnlTítulo.BackColor = System.Drawing.Color.Black;
-            this.pnlTítulo.Controls.Add(this.lblTítulo_1);
+            this.pnlTítulo.Controls.Add(this.lbl_Título);
             this.pnlTítulo.Location = new System.Drawing.Point(0, 0);
             this.pnlTítulo.Margin = new System.Windows.Forms.Padding(0);
             this.pnlTítulo.Name = "pnlTítulo";
             this.pnlTítulo.Size = new System.Drawing.Size(301, 64);
             this.pnlTítulo.TabIndex = 27;
+            // 
+            // lbl_Título
+            // 
+            this.lbl_Título.AutoEllipsis = true;
+            this.lbl_Título.BackColor = System.Drawing.Color.Black;
+            this.lbl_Título.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_Título.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_Título.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Título.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lbl_Título.Location = new System.Drawing.Point(0, 0);
+            this.lbl_Título.Name = "lbl_Título";
+            this.lbl_Título.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.lbl_Título.Size = new System.Drawing.Size(301, 64);
+            this.lbl_Título.TabIndex = 0;
+            this.lbl_Título.Text = "Calculadora";
+            this.lbl_Título.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnMR
             // 
@@ -440,13 +450,12 @@ namespace CalculadoraCientifica
             this.btnMR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMR.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMR.ForeColor = System.Drawing.Color.Black;
-            this.btnMR.Location = new System.Drawing.Point(90, 125);
+            this.btnMR.Location = new System.Drawing.Point(25, 252);
             this.btnMR.Name = "btnMR";
             this.btnMR.Size = new System.Drawing.Size(55, 48);
             this.btnMR.TabIndex = 29;
             this.btnMR.Text = "MR";
             this.btnMR.UseVisualStyleBackColor = false;
-            this.btnMR.Click += new System.EventHandler(this.btnMR_Click);
             // 
             // pnlSair
             // 
@@ -458,22 +467,6 @@ namespace CalculadoraCientifica
             this.pnlSair.Name = "pnlSair";
             this.pnlSair.Size = new System.Drawing.Size(61, 64);
             this.pnlSair.TabIndex = 30;
-            // 
-            // lblTítulo_1
-            // 
-            this.lblTítulo_1.AutoEllipsis = true;
-            this.lblTítulo_1.BackColor = System.Drawing.Color.Black;
-            this.lblTítulo_1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTítulo_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblTítulo_1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTítulo_1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblTítulo_1.Location = new System.Drawing.Point(0, 0);
-            this.lblTítulo_1.Name = "lblTítulo_1";
-            this.lblTítulo_1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.lblTítulo_1.Size = new System.Drawing.Size(301, 64);
-            this.lblTítulo_1.TabIndex = 0;
-            this.lblTítulo_1.Text = "Calculadora";
-            this.lblTítulo_1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_Sair
             // 
@@ -487,42 +480,43 @@ namespace CalculadoraCientifica
             this.lbl_Sair.TabIndex = 0;
             this.lbl_Sair.Text = "Sair";
             this.lbl_Sair.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Sair.Click += new System.EventHandler(this.lbl_Sair_Click);
             // 
-            // Form1
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(363, 408);
+            this.ClientSize = new System.Drawing.Size(363, 439);
             this.Controls.Add(this.pnlSair);
             this.Controls.Add(this.btnMR);
             this.Controls.Add(this.pnlTítulo);
-            this.Controls.Add(this.rbPainelExibição);
-            this.Controls.Add(this.btnSomar);
-            this.Controls.Add(this.btnResultado);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btnPonto);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.btnZeroZero);
+            this.Controls.Add(this.rb_PainelExibição);
+            this.Controls.Add(this.btn_Operação_Adicionar);
+            this.Controls.Add(this.btn_Operação_Resultado);
+            this.Controls.Add(this.btn_Númerico_3);
+            this.Controls.Add(this.btn_Virgula);
+            this.Controls.Add(this.btn_Númerico_2);
+            this.Controls.Add(this.btn_Númerico_1);
+            this.Controls.Add(this.btn_Númerico_00);
             this.Controls.Add(this.btnMS);
-            this.Controls.Add(this.btnRaiz);
+            this.Controls.Add(this.btn_Raiz);
             this.Controls.Add(this.btnMC);
-            this.Controls.Add(this.btnCa);
-            this.Controls.Add(this.btnZero);
-            this.Controls.Add(this.btnSubtrair);
+            this.Controls.Add(this.btn_CE);
+            this.Controls.Add(this.btn_Númerico_0);
+            this.Controls.Add(this.btn_Operação_Subtrair);
             this.Controls.Add(this.btnM_menos);
-            this.Controls.Add(this.btn6);
-            this.Controls.Add(this.btn5);
-            this.Controls.Add(this.btn4);
-            this.Controls.Add(this.btnMultiplicar);
-            this.Controls.Add(this.btn9);
-            this.Controls.Add(this.btn8);
-            this.Controls.Add(this.btn7);
-            this.Controls.Add(this.btnDividir);
+            this.Controls.Add(this.btn_Númerico_6);
+            this.Controls.Add(this.btn_Númerico_5);
+            this.Controls.Add(this.btn_Númerico_4);
+            this.Controls.Add(this.btn_Operação_Multiplicar);
+            this.Controls.Add(this.btn_Númerico_9);
+            this.Controls.Add(this.btn_Númerico_8);
+            this.Controls.Add(this.btn_Númerico_7);
+            this.Controls.Add(this.btn_Operação_Dividir);
             this.Controls.Add(this.btnM_mais);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "frmPrincipal";
             this.Text = "frmCalculadora";
             this.pnlTítulo.ResumeLayout(false);
             this.pnlSair.ResumeLayout(false);
@@ -532,33 +526,33 @@ namespace CalculadoraCientifica
 
         #endregion
         private System.Windows.Forms.Button btnM_mais;
-        private System.Windows.Forms.Button btnDividir;
-        private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Button btn8;
-        private System.Windows.Forms.Button btn9;
-        private System.Windows.Forms.Button btnMultiplicar;
-        private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btn5;
-        private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.Button btn_Operação_Dividir;
+        private System.Windows.Forms.Button btn_Númerico_7;
+        private System.Windows.Forms.Button btn_Númerico_8;
+        private System.Windows.Forms.Button btn_Númerico_9;
+        private System.Windows.Forms.Button btn_Operação_Multiplicar;
+        private System.Windows.Forms.Button btn_Númerico_4;
+        private System.Windows.Forms.Button btn_Númerico_5;
+        private System.Windows.Forms.Button btn_Númerico_6;
         private System.Windows.Forms.Button btnM_menos;
-        private System.Windows.Forms.Button btnSubtrair;
-        private System.Windows.Forms.Button btnZero;
-        private System.Windows.Forms.Button btnCa;
+        private System.Windows.Forms.Button btn_Operação_Subtrair;
+        private System.Windows.Forms.Button btn_Númerico_0;
+        private System.Windows.Forms.Button btn_CE;
         private System.Windows.Forms.Button btnMC;
-        private System.Windows.Forms.Button btnRaiz;
+        private System.Windows.Forms.Button btn_Raiz;
         private System.Windows.Forms.Button btnMS;
-        private System.Windows.Forms.Button btnZeroZero;
-        private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btnPonto;
-        private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.Button btnResultado;
-        private System.Windows.Forms.Button btnSomar;
-        private System.Windows.Forms.RichTextBox rbPainelExibição;
+        private System.Windows.Forms.Button btn_Númerico_00;
+        private System.Windows.Forms.Button btn_Númerico_1;
+        private System.Windows.Forms.Button btn_Númerico_2;
+        private System.Windows.Forms.Button btn_Virgula;
+        private System.Windows.Forms.Button btn_Númerico_3;
+        private System.Windows.Forms.Button btn_Operação_Resultado;
+        private System.Windows.Forms.Button btn_Operação_Adicionar;
+        private System.Windows.Forms.RichTextBox rb_PainelExibição;
         private System.Windows.Forms.Panel pnlTítulo;
         private System.Windows.Forms.Button btnMR;
         private System.Windows.Forms.Panel pnlSair;
-        private System.Windows.Forms.Label lblTítulo_1;
+        private System.Windows.Forms.Label lbl_Título;
         private System.Windows.Forms.Label lbl_Sair;
     }
 }
