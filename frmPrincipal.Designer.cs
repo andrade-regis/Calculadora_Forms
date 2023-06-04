@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace CalculadoraCientifica
 {
     partial class frmPrincipal
@@ -29,7 +31,8 @@ namespace CalculadoraCientifica
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnM_mais = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
+            this.btn_Operação_M_Adicionar = new System.Windows.Forms.Button();
             this.btn_Operação_Dividir = new System.Windows.Forms.Button();
             this.btn_Númerico_7 = new System.Windows.Forms.Button();
             this.btn_Númerico_8 = new System.Windows.Forms.Button();
@@ -38,13 +41,13 @@ namespace CalculadoraCientifica
             this.btn_Númerico_4 = new System.Windows.Forms.Button();
             this.btn_Númerico_5 = new System.Windows.Forms.Button();
             this.btn_Númerico_6 = new System.Windows.Forms.Button();
-            this.btnM_menos = new System.Windows.Forms.Button();
+            this.btn_Operação_M_Subtrair = new System.Windows.Forms.Button();
             this.btn_Operação_Subtrair = new System.Windows.Forms.Button();
             this.btn_Númerico_0 = new System.Windows.Forms.Button();
             this.btn_CE = new System.Windows.Forms.Button();
-            this.btnMC = new System.Windows.Forms.Button();
-            this.btn_Raiz = new System.Windows.Forms.Button();
-            this.btnMS = new System.Windows.Forms.Button();
+            this.btn_Operação_MC = new System.Windows.Forms.Button();
+            this.btn_Operação_Raiz = new System.Windows.Forms.Button();
+            this.btn_Operação_MS = new System.Windows.Forms.Button();
             this.btn_Númerico_00 = new System.Windows.Forms.Button();
             this.btn_Númerico_1 = new System.Windows.Forms.Button();
             this.btn_Númerico_2 = new System.Windows.Forms.Button();
@@ -55,34 +58,35 @@ namespace CalculadoraCientifica
             this.rb_PainelExibição = new System.Windows.Forms.RichTextBox();
             this.pnlTítulo = new System.Windows.Forms.Panel();
             this.lbl_Título = new System.Windows.Forms.Label();
-            this.btnMR = new System.Windows.Forms.Button();
+            this.btn_Operação_MR = new System.Windows.Forms.Button();
             this.pnlSair = new System.Windows.Forms.Panel();
             this.lbl_Sair = new System.Windows.Forms.Label();
             this.pnlTítulo.SuspendLayout();
             this.pnlSair.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnM_mais
+            // btn_Operação_M_Adicionar
             // 
-            this.btnM_mais.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnM_mais.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnM_mais.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnM_mais.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnM_mais.ForeColor = System.Drawing.Color.Black;
-            this.btnM_mais.Location = new System.Drawing.Point(25, 360);
-            this.btnM_mais.Name = "btnM_mais";
-            this.btnM_mais.Size = new System.Drawing.Size(55, 48);
-            this.btnM_mais.TabIndex = 2;
-            this.btnM_mais.Text = "M+";
-            this.btnM_mais.UseVisualStyleBackColor = false;
+            this.btn_Operação_M_Adicionar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_M_Adicionar.BackColor = System.Drawing.Color.DarkCyan;
+            this.btn_Operação_M_Adicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_M_Adicionar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_M_Adicionar.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Operação_M_Adicionar.Location = new System.Drawing.Point(25, 360);
+            this.btn_Operação_M_Adicionar.Name = "btn_Operação_M_Adicionar";
+            this.btn_Operação_M_Adicionar.Size = new System.Drawing.Size(55, 48);
+            this.btn_Operação_M_Adicionar.TabIndex = 2;
+            this.btn_Operação_M_Adicionar.Text = "M+";
+            this.btn_Operação_M_Adicionar.UseVisualStyleBackColor = false;
+            this.btn_Operação_M_Adicionar.Click += new System.EventHandler(this.btn_Operação_M_Adicionar_Click);
             // 
             // btn_Operação_Dividir
             // 
             this.btn_Operação_Dividir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Operação_Dividir.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Operação_Dividir.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Operação_Dividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Operação_Dividir.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Operação_Dividir.ForeColor = System.Drawing.Color.Black;
+            this.btn_Operação_Dividir.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Operação_Dividir.Location = new System.Drawing.Point(285, 145);
             this.btn_Operação_Dividir.Name = "btn_Operação_Dividir";
             this.btn_Operação_Dividir.Size = new System.Drawing.Size(55, 48);
@@ -94,10 +98,10 @@ namespace CalculadoraCientifica
             // btn_Númerico_7
             // 
             this.btn_Númerico_7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_7.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_7.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_7.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_7.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_7.Location = new System.Drawing.Point(90, 199);
             this.btn_Númerico_7.Name = "btn_Númerico_7";
             this.btn_Númerico_7.Size = new System.Drawing.Size(55, 48);
@@ -109,10 +113,10 @@ namespace CalculadoraCientifica
             // btn_Númerico_8
             // 
             this.btn_Númerico_8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_8.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_8.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_8.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_8.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_8.Location = new System.Drawing.Point(155, 199);
             this.btn_Númerico_8.Name = "btn_Númerico_8";
             this.btn_Númerico_8.Size = new System.Drawing.Size(55, 48);
@@ -124,10 +128,10 @@ namespace CalculadoraCientifica
             // btn_Númerico_9
             // 
             this.btn_Númerico_9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_9.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_9.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_9.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_9.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_9.Location = new System.Drawing.Point(220, 199);
             this.btn_Númerico_9.Name = "btn_Númerico_9";
             this.btn_Númerico_9.Size = new System.Drawing.Size(55, 48);
@@ -139,10 +143,10 @@ namespace CalculadoraCientifica
             // btn_Operação_Multiplicar
             // 
             this.btn_Operação_Multiplicar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Operação_Multiplicar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Operação_Multiplicar.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Operação_Multiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Operação_Multiplicar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Operação_Multiplicar.ForeColor = System.Drawing.Color.Black;
+            this.btn_Operação_Multiplicar.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Operação_Multiplicar.Location = new System.Drawing.Point(285, 199);
             this.btn_Operação_Multiplicar.Name = "btn_Operação_Multiplicar";
             this.btn_Operação_Multiplicar.Size = new System.Drawing.Size(55, 48);
@@ -154,10 +158,10 @@ namespace CalculadoraCientifica
             // btn_Númerico_4
             // 
             this.btn_Númerico_4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_4.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_4.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_4.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_4.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_4.Location = new System.Drawing.Point(90, 253);
             this.btn_Númerico_4.Name = "btn_Númerico_4";
             this.btn_Númerico_4.Size = new System.Drawing.Size(55, 48);
@@ -169,10 +173,10 @@ namespace CalculadoraCientifica
             // btn_Númerico_5
             // 
             this.btn_Númerico_5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_5.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_5.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_5.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_5.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_5.Location = new System.Drawing.Point(155, 253);
             this.btn_Númerico_5.Name = "btn_Númerico_5";
             this.btn_Númerico_5.Size = new System.Drawing.Size(55, 48);
@@ -184,10 +188,10 @@ namespace CalculadoraCientifica
             // btn_Númerico_6
             // 
             this.btn_Númerico_6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_6.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_6.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_6.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_6.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_6.Location = new System.Drawing.Point(220, 253);
             this.btn_Númerico_6.Name = "btn_Númerico_6";
             this.btn_Númerico_6.Size = new System.Drawing.Size(55, 48);
@@ -196,27 +200,28 @@ namespace CalculadoraCientifica
             this.btn_Númerico_6.UseVisualStyleBackColor = false;
             this.btn_Númerico_6.Click += new System.EventHandler(this.btn_Númerico_Click);
             // 
-            // btnM_menos
+            // btn_Operação_M_Subtrair
             // 
-            this.btnM_menos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnM_menos.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnM_menos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnM_menos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnM_menos.ForeColor = System.Drawing.Color.Black;
-            this.btnM_menos.Location = new System.Drawing.Point(25, 306);
-            this.btnM_menos.Name = "btnM_menos";
-            this.btnM_menos.Size = new System.Drawing.Size(55, 48);
-            this.btnM_menos.TabIndex = 11;
-            this.btnM_menos.Text = "M-";
-            this.btnM_menos.UseVisualStyleBackColor = false;
+            this.btn_Operação_M_Subtrair.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_M_Subtrair.BackColor = System.Drawing.Color.DarkCyan;
+            this.btn_Operação_M_Subtrair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_M_Subtrair.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_M_Subtrair.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Operação_M_Subtrair.Location = new System.Drawing.Point(25, 306);
+            this.btn_Operação_M_Subtrair.Name = "btn_Operação_M_Subtrair";
+            this.btn_Operação_M_Subtrair.Size = new System.Drawing.Size(55, 48);
+            this.btn_Operação_M_Subtrair.TabIndex = 11;
+            this.btn_Operação_M_Subtrair.Text = "M-";
+            this.btn_Operação_M_Subtrair.UseVisualStyleBackColor = false;
+            this.btn_Operação_M_Subtrair.Click += new System.EventHandler(this.btn_Operação_M_Subtrair_Click);
             // 
             // btn_Operação_Subtrair
             // 
             this.btn_Operação_Subtrair.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Operação_Subtrair.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Operação_Subtrair.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Operação_Subtrair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Operação_Subtrair.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Operação_Subtrair.ForeColor = System.Drawing.Color.Black;
+            this.btn_Operação_Subtrair.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Operação_Subtrair.Location = new System.Drawing.Point(285, 253);
             this.btn_Operação_Subtrair.Name = "btn_Operação_Subtrair";
             this.btn_Operação_Subtrair.Size = new System.Drawing.Size(55, 48);
@@ -228,10 +233,10 @@ namespace CalculadoraCientifica
             // btn_Númerico_0
             // 
             this.btn_Númerico_0.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_0.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_0.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_0.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_0.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_0.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_0.Location = new System.Drawing.Point(155, 360);
             this.btn_Númerico_0.Name = "btn_Númerico_0";
             this.btn_Númerico_0.Size = new System.Drawing.Size(55, 48);
@@ -243,66 +248,70 @@ namespace CalculadoraCientifica
             // btn_CE
             // 
             this.btn_CE.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_CE.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_CE.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_CE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CE.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CE.ForeColor = System.Drawing.Color.Black;
+            this.btn_CE.ForeColor = System.Drawing.Color.Transparent;
             this.btn_CE.Location = new System.Drawing.Point(90, 145);
             this.btn_CE.Name = "btn_CE";
             this.btn_CE.Size = new System.Drawing.Size(55, 48);
             this.btn_CE.TabIndex = 14;
             this.btn_CE.Text = "CE";
             this.btn_CE.UseVisualStyleBackColor = false;
+            this.btn_CE.Click += new System.EventHandler(this.btn_CE_Click);
             // 
-            // btnMC
+            // btn_Operação_MC
             // 
-            this.btnMC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnMC.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMC.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMC.ForeColor = System.Drawing.Color.Black;
-            this.btnMC.Location = new System.Drawing.Point(25, 199);
-            this.btnMC.Name = "btnMC";
-            this.btnMC.Size = new System.Drawing.Size(55, 48);
-            this.btnMC.TabIndex = 15;
-            this.btnMC.Text = "MC";
-            this.btnMC.UseVisualStyleBackColor = false;
+            this.btn_Operação_MC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_MC.BackColor = System.Drawing.Color.DarkCyan;
+            this.btn_Operação_MC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_MC.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_MC.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Operação_MC.Location = new System.Drawing.Point(25, 199);
+            this.btn_Operação_MC.Name = "btn_Operação_MC";
+            this.btn_Operação_MC.Size = new System.Drawing.Size(55, 48);
+            this.btn_Operação_MC.TabIndex = 15;
+            this.btn_Operação_MC.Text = "MC";
+            this.btn_Operação_MC.UseVisualStyleBackColor = false;
+            this.btn_Operação_MC.Click += new System.EventHandler(this.btn_Operação_MC_Click);
             // 
-            // btn_Raiz
+            // btn_Operação_Raiz
             // 
-            this.btn_Raiz.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Raiz.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btn_Raiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Raiz.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Raiz.ForeColor = System.Drawing.Color.Black;
-            this.btn_Raiz.Location = new System.Drawing.Point(220, 145);
-            this.btn_Raiz.Name = "btn_Raiz";
-            this.btn_Raiz.Size = new System.Drawing.Size(55, 48);
-            this.btn_Raiz.TabIndex = 16;
-            this.btn_Raiz.Text = "√";
-            this.btn_Raiz.UseVisualStyleBackColor = false;
+            this.btn_Operação_Raiz.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_Raiz.BackColor = System.Drawing.Color.DarkCyan;
+            this.btn_Operação_Raiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_Raiz.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_Raiz.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Operação_Raiz.Location = new System.Drawing.Point(220, 145);
+            this.btn_Operação_Raiz.Name = "btn_Operação_Raiz";
+            this.btn_Operação_Raiz.Size = new System.Drawing.Size(55, 48);
+            this.btn_Operação_Raiz.TabIndex = 16;
+            this.btn_Operação_Raiz.Text = "√";
+            this.btn_Operação_Raiz.UseVisualStyleBackColor = false;
+            this.btn_Operação_Raiz.Click += new System.EventHandler(this.btn_Operação_Raiz_Click);
             // 
-            // btnMS
+            // btn_Operação_MS
             // 
-            this.btnMS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnMS.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMS.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMS.ForeColor = System.Drawing.Color.Black;
-            this.btnMS.Location = new System.Drawing.Point(25, 145);
-            this.btnMS.Name = "btnMS";
-            this.btnMS.Size = new System.Drawing.Size(55, 48);
-            this.btnMS.TabIndex = 17;
-            this.btnMS.Text = "MS";
-            this.btnMS.UseVisualStyleBackColor = false;
+            this.btn_Operação_MS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_MS.BackColor = System.Drawing.Color.DarkCyan;
+            this.btn_Operação_MS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_MS.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_MS.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Operação_MS.Location = new System.Drawing.Point(25, 145);
+            this.btn_Operação_MS.Name = "btn_Operação_MS";
+            this.btn_Operação_MS.Size = new System.Drawing.Size(55, 48);
+            this.btn_Operação_MS.TabIndex = 17;
+            this.btn_Operação_MS.Text = "MS";
+            this.btn_Operação_MS.UseVisualStyleBackColor = false;
+            this.btn_Operação_MS.Click += new System.EventHandler(this.btn_Operação_MS_Click);
             // 
             // btn_Númerico_00
             // 
             this.btn_Númerico_00.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_00.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_00.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_00.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_00.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_00.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_00.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_00.Location = new System.Drawing.Point(90, 360);
             this.btn_Númerico_00.Name = "btn_Númerico_00";
             this.btn_Númerico_00.Size = new System.Drawing.Size(55, 48);
@@ -314,10 +323,10 @@ namespace CalculadoraCientifica
             // btn_Númerico_1
             // 
             this.btn_Númerico_1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_1.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_1.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_1.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_1.Location = new System.Drawing.Point(90, 306);
             this.btn_Númerico_1.Name = "btn_Númerico_1";
             this.btn_Númerico_1.Size = new System.Drawing.Size(55, 48);
@@ -329,10 +338,10 @@ namespace CalculadoraCientifica
             // btn_Númerico_2
             // 
             this.btn_Númerico_2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_2.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_2.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_2.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_2.Location = new System.Drawing.Point(155, 306);
             this.btn_Númerico_2.Name = "btn_Númerico_2";
             this.btn_Númerico_2.Size = new System.Drawing.Size(55, 48);
@@ -344,24 +353,25 @@ namespace CalculadoraCientifica
             // btn_Virgula
             // 
             this.btn_Virgula.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Virgula.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Virgula.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Virgula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Virgula.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Virgula.ForeColor = System.Drawing.Color.Black;
+            this.btn_Virgula.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Virgula.Location = new System.Drawing.Point(155, 145);
             this.btn_Virgula.Name = "btn_Virgula";
             this.btn_Virgula.Size = new System.Drawing.Size(55, 48);
             this.btn_Virgula.TabIndex = 21;
             this.btn_Virgula.Text = ",";
             this.btn_Virgula.UseVisualStyleBackColor = false;
+            this.btn_Virgula.Click += new System.EventHandler(this.btn_Virgula_Click);
             // 
             // btn_Númerico_3
             // 
             this.btn_Númerico_3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Númerico_3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Númerico_3.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Númerico_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Númerico_3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Númerico_3.ForeColor = System.Drawing.Color.Black;
+            this.btn_Númerico_3.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Númerico_3.Location = new System.Drawing.Point(220, 306);
             this.btn_Númerico_3.Name = "btn_Númerico_3";
             this.btn_Númerico_3.Size = new System.Drawing.Size(55, 48);
@@ -373,10 +383,10 @@ namespace CalculadoraCientifica
             // btn_Operação_Resultado
             // 
             this.btn_Operação_Resultado.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Operação_Resultado.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Operação_Resultado.BackColor = System.Drawing.Color.DarkCyan;
             this.btn_Operação_Resultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Operação_Resultado.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Operação_Resultado.ForeColor = System.Drawing.Color.Black;
+            this.btn_Operação_Resultado.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Operação_Resultado.Location = new System.Drawing.Point(220, 360);
             this.btn_Operação_Resultado.Name = "btn_Operação_Resultado";
             this.btn_Operação_Resultado.Size = new System.Drawing.Size(55, 48);
@@ -388,10 +398,10 @@ namespace CalculadoraCientifica
             // btn_Operação_Adicionar
             // 
             this.btn_Operação_Adicionar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Operação_Adicionar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_Operação_Adicionar.BackColor = System.Drawing.Color.LightSalmon;
             this.btn_Operação_Adicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Operação_Adicionar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Operação_Adicionar.ForeColor = System.Drawing.Color.Black;
+            this.btn_Operação_Adicionar.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Operação_Adicionar.Location = new System.Drawing.Point(285, 306);
             this.btn_Operação_Adicionar.Name = "btn_Operação_Adicionar";
             this.btn_Operação_Adicionar.Size = new System.Drawing.Size(55, 102);
@@ -402,7 +412,7 @@ namespace CalculadoraCientifica
             // 
             // rb_PainelExibição
             // 
-            this.rb_PainelExibição.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.rb_PainelExibição.BackColor = System.Drawing.Color.White;
             this.rb_PainelExibição.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rb_PainelExibição.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_PainelExibição.ForeColor = System.Drawing.Color.Black;
@@ -412,6 +422,7 @@ namespace CalculadoraCientifica
             this.rb_PainelExibição.Size = new System.Drawing.Size(315, 42);
             this.rb_PainelExibição.TabIndex = 26;
             this.rb_PainelExibição.Text = "";
+            this.rb_PainelExibição.TextChanged += new System.EventHandler(this.rb_PainelExibição_TextChanged);
             this.rb_PainelExibição.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rb_PainelExibição_KeyPress);
             // 
             // pnlTítulo
@@ -430,11 +441,11 @@ namespace CalculadoraCientifica
             // lbl_Título
             // 
             this.lbl_Título.AutoEllipsis = true;
-            this.lbl_Título.BackColor = System.Drawing.Color.Black;
+            this.lbl_Título.BackColor = System.Drawing.Color.DarkSlateGray;
             this.lbl_Título.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Título.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_Título.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Título.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lbl_Título.ForeColor = System.Drawing.Color.Transparent;
             this.lbl_Título.Location = new System.Drawing.Point(0, 0);
             this.lbl_Título.Name = "lbl_Título";
             this.lbl_Título.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
@@ -442,20 +453,22 @@ namespace CalculadoraCientifica
             this.lbl_Título.TabIndex = 0;
             this.lbl_Título.Text = "Calculadora";
             this.lbl_Título.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Título.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbl_Título_MouseDoubleClick);
             // 
-            // btnMR
+            // btn_Operação_MR
             // 
-            this.btnMR.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnMR.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMR.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMR.ForeColor = System.Drawing.Color.Black;
-            this.btnMR.Location = new System.Drawing.Point(25, 252);
-            this.btnMR.Name = "btnMR";
-            this.btnMR.Size = new System.Drawing.Size(55, 48);
-            this.btnMR.TabIndex = 29;
-            this.btnMR.Text = "MR";
-            this.btnMR.UseVisualStyleBackColor = false;
+            this.btn_Operação_MR.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Operação_MR.BackColor = System.Drawing.Color.DarkCyan;
+            this.btn_Operação_MR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Operação_MR.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Operação_MR.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Operação_MR.Location = new System.Drawing.Point(25, 252);
+            this.btn_Operação_MR.Name = "btn_Operação_MR";
+            this.btn_Operação_MR.Size = new System.Drawing.Size(55, 48);
+            this.btn_Operação_MR.TabIndex = 29;
+            this.btn_Operação_MR.Text = "MR";
+            this.btn_Operação_MR.UseVisualStyleBackColor = false;
+            this.btn_Operação_MR.Click += new System.EventHandler(this.btn_Operação_MR_Click);
             // 
             // pnlSair
             // 
@@ -470,10 +483,11 @@ namespace CalculadoraCientifica
             // 
             // lbl_Sair
             // 
+            this.lbl_Sair.BackColor = System.Drawing.Color.DarkSlateGray;
             this.lbl_Sair.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_Sair.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Sair.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lbl_Sair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Sair.ForeColor = System.Drawing.Color.Transparent;
             this.lbl_Sair.Location = new System.Drawing.Point(0, 0);
             this.lbl_Sair.Name = "lbl_Sair";
             this.lbl_Sair.Size = new System.Drawing.Size(61, 64);
@@ -486,10 +500,10 @@ namespace CalculadoraCientifica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(363, 439);
             this.Controls.Add(this.pnlSair);
-            this.Controls.Add(this.btnMR);
+            this.Controls.Add(this.btn_Operação_MR);
             this.Controls.Add(this.pnlTítulo);
             this.Controls.Add(this.rb_PainelExibição);
             this.Controls.Add(this.btn_Operação_Adicionar);
@@ -499,13 +513,13 @@ namespace CalculadoraCientifica
             this.Controls.Add(this.btn_Númerico_2);
             this.Controls.Add(this.btn_Númerico_1);
             this.Controls.Add(this.btn_Númerico_00);
-            this.Controls.Add(this.btnMS);
-            this.Controls.Add(this.btn_Raiz);
-            this.Controls.Add(this.btnMC);
+            this.Controls.Add(this.btn_Operação_MS);
+            this.Controls.Add(this.btn_Operação_Raiz);
+            this.Controls.Add(this.btn_Operação_MC);
             this.Controls.Add(this.btn_CE);
             this.Controls.Add(this.btn_Númerico_0);
             this.Controls.Add(this.btn_Operação_Subtrair);
-            this.Controls.Add(this.btnM_menos);
+            this.Controls.Add(this.btn_Operação_M_Subtrair);
             this.Controls.Add(this.btn_Númerico_6);
             this.Controls.Add(this.btn_Númerico_5);
             this.Controls.Add(this.btn_Númerico_4);
@@ -514,9 +528,11 @@ namespace CalculadoraCientifica
             this.Controls.Add(this.btn_Númerico_8);
             this.Controls.Add(this.btn_Númerico_7);
             this.Controls.Add(this.btn_Operação_Dividir);
-            this.Controls.Add(this.btnM_mais);
+            this.Controls.Add(this.btn_Operação_M_Adicionar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)Properties.Resources.calc);
             this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCalculadora";
             this.pnlTítulo.ResumeLayout(false);
             this.pnlSair.ResumeLayout(false);
@@ -525,7 +541,7 @@ namespace CalculadoraCientifica
         }
 
         #endregion
-        private System.Windows.Forms.Button btnM_mais;
+        private System.Windows.Forms.Button btn_Operação_M_Adicionar;
         private System.Windows.Forms.Button btn_Operação_Dividir;
         private System.Windows.Forms.Button btn_Númerico_7;
         private System.Windows.Forms.Button btn_Númerico_8;
@@ -534,13 +550,13 @@ namespace CalculadoraCientifica
         private System.Windows.Forms.Button btn_Númerico_4;
         private System.Windows.Forms.Button btn_Númerico_5;
         private System.Windows.Forms.Button btn_Númerico_6;
-        private System.Windows.Forms.Button btnM_menos;
+        private System.Windows.Forms.Button btn_Operação_M_Subtrair;
         private System.Windows.Forms.Button btn_Operação_Subtrair;
         private System.Windows.Forms.Button btn_Númerico_0;
         private System.Windows.Forms.Button btn_CE;
-        private System.Windows.Forms.Button btnMC;
-        private System.Windows.Forms.Button btn_Raiz;
-        private System.Windows.Forms.Button btnMS;
+        private System.Windows.Forms.Button btn_Operação_MC;
+        private System.Windows.Forms.Button btn_Operação_Raiz;
+        private System.Windows.Forms.Button btn_Operação_MS;
         private System.Windows.Forms.Button btn_Númerico_00;
         private System.Windows.Forms.Button btn_Númerico_1;
         private System.Windows.Forms.Button btn_Númerico_2;
@@ -550,7 +566,7 @@ namespace CalculadoraCientifica
         private System.Windows.Forms.Button btn_Operação_Adicionar;
         private System.Windows.Forms.RichTextBox rb_PainelExibição;
         private System.Windows.Forms.Panel pnlTítulo;
-        private System.Windows.Forms.Button btnMR;
+        private System.Windows.Forms.Button btn_Operação_MR;
         private System.Windows.Forms.Panel pnlSair;
         private System.Windows.Forms.Label lbl_Título;
         private System.Windows.Forms.Label lbl_Sair;
