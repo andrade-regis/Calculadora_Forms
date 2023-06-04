@@ -219,7 +219,7 @@ namespace CalculadoraCientifica
                     rb_PainelExibição.Text = valor.ToString();
                 }
 
-                RichTextBox RichBox = (RichTextBox)sender;
+                TextBox RichBox = (TextBox)sender;
                 RichBox.Focus();
                 RichBox.Select(RichBox.Text.Length, 0);
                 RichBox.ScrollToCaret();
@@ -410,6 +410,7 @@ namespace CalculadoraCientifica
                     btn_Operação_Dividir_Click(null, null);
                     return;
                 case '=':
+                case (char)Keys.Enter:
 
                     args.Handled = true;
                     btn_Operação_Resultado_Click(null, null);
@@ -425,6 +426,7 @@ namespace CalculadoraCientifica
                     return;
                 case (char)Keys.Back:
                     return;
+
                 default:
                     args.Handled = true;
                     break;

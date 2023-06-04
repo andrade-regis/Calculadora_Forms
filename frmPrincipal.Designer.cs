@@ -31,7 +31,6 @@ namespace CalculadoraCientifica
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.btn_Operação_M_Adicionar = new System.Windows.Forms.Button();
             this.btn_Operação_Dividir = new System.Windows.Forms.Button();
             this.btn_Númerico_7 = new System.Windows.Forms.Button();
@@ -55,12 +54,12 @@ namespace CalculadoraCientifica
             this.btn_Númerico_3 = new System.Windows.Forms.Button();
             this.btn_Operação_Resultado = new System.Windows.Forms.Button();
             this.btn_Operação_Adicionar = new System.Windows.Forms.Button();
-            this.rb_PainelExibição = new System.Windows.Forms.RichTextBox();
             this.pnlTítulo = new System.Windows.Forms.Panel();
             this.lbl_Título = new System.Windows.Forms.Label();
             this.btn_Operação_MR = new System.Windows.Forms.Button();
             this.pnlSair = new System.Windows.Forms.Panel();
             this.lbl_Sair = new System.Windows.Forms.Label();
+            this.rb_PainelExibição = new System.Windows.Forms.TextBox();
             this.pnlTítulo.SuspendLayout();
             this.pnlSair.SuspendLayout();
             this.SuspendLayout();
@@ -410,21 +409,6 @@ namespace CalculadoraCientifica
             this.btn_Operação_Adicionar.UseVisualStyleBackColor = false;
             this.btn_Operação_Adicionar.Click += new System.EventHandler(this.btn_Operação_Adicionar_Click);
             // 
-            // rb_PainelExibição
-            // 
-            this.rb_PainelExibição.BackColor = System.Drawing.Color.White;
-            this.rb_PainelExibição.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rb_PainelExibição.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_PainelExibição.ForeColor = System.Drawing.Color.Black;
-            this.rb_PainelExibição.Location = new System.Drawing.Point(25, 77);
-            this.rb_PainelExibição.Multiline = false;
-            this.rb_PainelExibição.Name = "rb_PainelExibição";
-            this.rb_PainelExibição.Size = new System.Drawing.Size(315, 42);
-            this.rb_PainelExibição.TabIndex = 26;
-            this.rb_PainelExibição.Text = "";
-            this.rb_PainelExibição.TextChanged += new System.EventHandler(this.rb_PainelExibição_TextChanged);
-            this.rb_PainelExibição.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rb_PainelExibição_KeyPress);
-            // 
             // pnlTítulo
             // 
             this.pnlTítulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -496,6 +480,19 @@ namespace CalculadoraCientifica
             this.lbl_Sair.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_Sair.Click += new System.EventHandler(this.lbl_Sair_Click);
             // 
+            // rb_PainelExibição
+            // 
+            this.rb_PainelExibição.BackColor = System.Drawing.Color.White;
+            this.rb_PainelExibição.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.rb_PainelExibição.ForeColor = System.Drawing.Color.Black;
+            this.rb_PainelExibição.Location = new System.Drawing.Point(25, 77);
+            this.rb_PainelExibição.Name = "rb_PainelExibição";
+            this.rb_PainelExibição.Size = new System.Drawing.Size(315, 43);
+            this.rb_PainelExibição.TabIndex = 31;
+            this.rb_PainelExibição.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rb_PainelExibição.TextChanged += new System.EventHandler(this.rb_PainelExibição_TextChanged);
+            this.rb_PainelExibição.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rb_PainelExibição_KeyPress);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -505,7 +502,6 @@ namespace CalculadoraCientifica
             this.Controls.Add(this.pnlSair);
             this.Controls.Add(this.btn_Operação_MR);
             this.Controls.Add(this.pnlTítulo);
-            this.Controls.Add(this.rb_PainelExibição);
             this.Controls.Add(this.btn_Operação_Adicionar);
             this.Controls.Add(this.btn_Operação_Resultado);
             this.Controls.Add(this.btn_Númerico_3);
@@ -529,14 +525,16 @@ namespace CalculadoraCientifica
             this.Controls.Add(this.btn_Númerico_7);
             this.Controls.Add(this.btn_Operação_Dividir);
             this.Controls.Add(this.btn_Operação_M_Adicionar);
+            this.Controls.Add(this.rb_PainelExibição);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)Properties.Resources.calc);
+            this.Icon = global::CalculadoraCientifica.Properties.Resources.calc;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCalculadora";
             this.pnlTítulo.ResumeLayout(false);
             this.pnlSair.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -564,12 +562,12 @@ namespace CalculadoraCientifica
         private System.Windows.Forms.Button btn_Númerico_3;
         private System.Windows.Forms.Button btn_Operação_Resultado;
         private System.Windows.Forms.Button btn_Operação_Adicionar;
-        private System.Windows.Forms.RichTextBox rb_PainelExibição;
         private System.Windows.Forms.Panel pnlTítulo;
         private System.Windows.Forms.Button btn_Operação_MR;
         private System.Windows.Forms.Panel pnlSair;
         private System.Windows.Forms.Label lbl_Título;
         private System.Windows.Forms.Label lbl_Sair;
+        private TextBox rb_PainelExibição;
     }
 }
 
