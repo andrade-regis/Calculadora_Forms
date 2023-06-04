@@ -1,6 +1,6 @@
 # Calculadora
 
-![Calculadora](./calculadora.png)
+![Calculadora](./Calculadora.png)
 
 Este é um projeto de uma calculadora simples desenvolvida em C#. A calculadora possui funcionalidades básicas, como adição, subtração, multiplicação, divisão, raiz quadrada e memory.
 
@@ -27,7 +27,7 @@ git clone https://github.com/andrade-regis/Calculadora_Forms
 
 cd Calculadora_Forms\bin\Release
 
-3. Abra o arquivo `calculadora.html` em seu navegador.
+3. Abra o arquivo `CalculadoraCientifica.exe`.
 
 4. Use a interface da calculadora para realizar os cálculos desejados.
 
