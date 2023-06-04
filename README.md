@@ -1,6 +1,6 @@
 # Calculadora
 
-![Calculadora](Calculadora.png)
+![Calculadora](.Calculadora.png)
 
 Este é um projeto de uma calculadora simples desenvolvida em C#. A calculadora possui funcionalidades básicas, como adição, subtração, multiplicação, divisão, raiz quadrada e memory.
 
